@@ -38,24 +38,10 @@ ActiveRecord::Schema.define(:version => 20110803111027) do
     t.integer  "page_id"
   end
 
-  create_table "content_areas_pages", :id => false, :force => true do |t|
-    t.integer  "page_id"
-    t.integer  "content_area_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.string   "slug"
     t.integer  "sort_order"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "pages_content_areas", :id => false, :force => true do |t|
-    t.integer  "page_id"
-    t.integer  "content_area_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
