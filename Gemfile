@@ -34,7 +34,7 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jquery-rails"
 gem 'devise'
-gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
+gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git", :branch => "rails-3.0"
 gem 'compass'
 gem 'aws-s3'    
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
