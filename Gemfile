@@ -1,6 +1,4 @@
 source 'http://rubygems.org'
-source 'http://gems.github.com'
-source 'http://gems.rubyforge.org/'
 
 gem 'rails', '3.0.9'
 
@@ -39,6 +37,12 @@ gem 'compass'
 gem 'aws-s3'    
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "friendly_id", "~> 3.2.1"
+gem 'twitter', "= 1.2.0"
+gem 'acts_as_indexed'
+gem 'RedCloth'
+gem 'acts-as-taggable-on'
+gem 'rails_admin_tag_list_field', :git => 'https://github.com/kryzhovnik/rails_admin_tag_list_field.git'
+gem 'acts_as_tree'
 
 group :development, :test do
   gem "heroku_plus", :group => [:development]

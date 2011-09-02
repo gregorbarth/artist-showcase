@@ -1,0 +1,36 @@
+@import "partials/base"
+
+// our mixins
+=less-styled-link
+  :text-decoration none
+
+// our constants
+$dark_blue: #3d66ac
+$sky_blue:  #90b3df
+
+
+body
+  color: $dark_blue
+  a
+    text-decoration: underline
+    +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
+
+h1, h2, h3, h4, h5, h6
+  +header-text
+  text-transform: uppercase      
+  
+  
+#header
+  #topnav
+    +horizontal-list-container
+    float: right
+    li
+      +horizontal-list-item
+      +column(2)
+      height: 100px
+      margin: 0px 3px
+      padding: 0px
+
+
+.active
+  font-weight: bold 

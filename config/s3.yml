@@ -1,0 +1,15 @@
+development:
+  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
+  secret_access_key: "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"
+  url: "XXX.s3.amazonaws.com"
+test:
+  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
+  secret_access_key: "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"
+  url: "XXX.s3.amazonaws.com"
+production:
+  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
+  secret_access_key: "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"
+  url: "XXX.s3.amazonaws.com"
+
+
+#'nal.s3-website-eu-west-1.amazonaws.com

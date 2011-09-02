@@ -1,0 +1,70 @@
+!!!
+%html
+  %head
+    %title= @page_title or "Cenatus CMS"
+    
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+    = stylesheet_link_tag 'compiled/application.css'
+    = stylesheet_link_tag 'compiled/link_icons.css', :media => 'screen, projection'
+    = stylesheet_link_tag :all
+    /[if lt IE 8]
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+
+    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"
+
+    %meta{:property => "og:title",  :content => @og_title}
+    %meta{:property => "og:type", :content => @og_type}
+    %meta{:property => "og:url", :content => @og_url}
+    %meta{:property => "og:image", :content => @og_image}
+    %meta{:property => "og:site_name", :content => @og_site_name}
+    %meta{:property => "fb:admins", :content => @og_admins}
+
+    :javascript
+      jQuery(function($){
+        $('#show_grid').click(function(){
+          $('#container').css("background", "url('/images/grid.png')");
+        });
+
+        $('#hide_grid').click(function(){
+          $('#container').css("background", "white");
+        });
+      });
+      
+    = csrf_meta_tag
+
+  %body.two-col.bp
+    
+    #container
+      #header
+        %ul#topnav
+          %li= nav_link "link1","http://cenatus.org"
+          %li= nav_link "link2","http://netaudiolondon.org"
+          %li= nav_link "link3","javascript:void(0);"
+      
+      #sidebar
+        %ul
+          %li= link_to "link1","javascript:void(0);"
+          %li= link_to "link2","javascript:void(0);"
+          - for page in Page.all do
+            %li= nav_link page.name, "/#{page.slug}"
+
+
+      #content
+        %hr
+        = yield
+  
+      #footer
+        %hr
+        
+        &copy; Cenatus
+        
+        #grid_debug{:style => "float:right"}
+          %a#show_grid
+            Show Grid
+          |
+          %a#hide_grid
+            Hide Grid
+  
+        
+

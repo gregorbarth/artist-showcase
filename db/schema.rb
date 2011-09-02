@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110803111027) do
+ActiveRecord::Schema.define(:version => 20110824180743) do
 
   create_table "assets", :force => true do |t|
     t.string   "name"
@@ -23,8 +23,22 @@ ActiveRecord::Schema.define(:version => 20110803111027) do
     t.datetime "asset_updated_at"
   end
 
+  create_table "assets_pages", :id => false, :force => true do |t|
+    t.integer  "asset_id"
+    t.integer  "page_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "categories", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories_pages", :id => false, :force => true do |t|
+    t.integer  "category_id"
+    t.integer  "page_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,6 +58,7 @@ ActiveRecord::Schema.define(:version => 20110803111027) do
     t.integer  "sort_order"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "parent_id"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
@@ -58,6 +73,23 @@ ActiveRecord::Schema.define(:version => 20110803111027) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "taggings", :force => true do |t|
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.integer  "tagger_id"
+    t.string   "tagger_type"
+    t.string   "context"
+    t.datetime "created_at"
+  end
+
+  add_index "taggings", ["tag_id"], :name => "index_taggings_on_tag_id"
+  add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
+
+  create_table "tags", :force => true do |t|
+    t.string "name"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
