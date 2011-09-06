@@ -59,6 +59,6 @@ CenatusCms::Application.configure do
   config.active_support.deprecation = :notify
   
   # use the VCS files for prod
-  Sass::Plugin.options[:never_update] = true   
+  #Sass::Plugin.options[:never_update] = true
   
 end
