@@ -26,24 +26,28 @@ form.bp
   // You'll probably want to remove the scaffolding once you start styling your site.
   +blueprint-scaffolding
 
-$sidebar-columns: floor($blueprint-grid-columns / 4)
+$aside-columns: floor(6)
+$hgroup-columns: floor(4)
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col
+body.three-col
   #container
     +container
-  #header, #footer
+  header, footer
     +column($blueprint-grid-columns)
-  #sidebar
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    // $sidebar-columns: floor($blueprint-grid-columns / 3)
-    +column($sidebar-columns)
-  #content
+  hgroup
+    +column($hgroup-columns)
+  article
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
     // $content-columns: ceil(2 * $blueprint-grid-columns / 3)
-    $content-columns: ($blueprint-grid-columns - $sidebar-columns)
+    $article-columns: ($blueprint-grid-columns - $aside-columns - $hgroup-columns)
     // true means it's the last column in the row
-    +column($content-columns, true)
+    +column($article-columns)
+  aside
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    // $sidebar-columns: floor($blueprint-grid-columns / 3)
+    +column($aside-columns, true)
+
 
 

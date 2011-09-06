@@ -32,38 +32,167 @@
       
     = csrf_meta_tag
 
-  %body.two-col.bp
+  %body.three-col.bp
     
     #container
-      #header
-        %ul#topnav
-          %li= nav_link "link1","http://cenatus.org"
-          %li= nav_link "link2","http://netaudiolondon.org"
-          %li= nav_link "link3","javascript:void(0);"
-      
-      #sidebar
-        %ul
-          %li= link_to "link1","javascript:void(0);"
-          %li= link_to "link2","javascript:void(0);"
-          - for page in Page.all do
-            %li= nav_link page.name, "/#{page.slug}"
+      %header
+        %nav
+          %ul
+            %li#homelogo= link_to "Ziggy Stardust","/"
+            %li= nav_link "Home","/"
+            %li= nav_link "Listen","#listen"
+            %li= nav_link "Biography","#biography"
+            %li= nav_link "Gigs","#gigs"
+            %li= nav_link "Contact","#contact"
+            %li
+            %li
+            %li#sociallinks= link_to "FB, etc", "/"
+      %section#landing
+        %hgroup
+          %h1= ""
+        %article
+          = image_tag "span-14-wide.png"
+          %h2= "Ziggy Stardust"
+          %p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida porttitor purus et tempus. Etiam semper, augue eget vestibulum auctor, dui libero rhoncus dui, vel hendrerit dui velit quis risus. Sed lectus nunc, blandit ut ullamcorper nec, cursus id libero. Quisque et quam nunc, at consequat nulla."
+        %aside
+          %ul
+            %li
+              %h4= "Twitter"
+            %li
+              %h4= "Newsletter Subscribe"
+            %li
+              %h4= "Booking info"
+            %li
+              %h4= "Latest Tracks"
+      %section#listen
+        %hgroup
+          %h1= link_to "Listen","#listen"
+        %article
+          %ul
+            %li
+              %object{:height => "81", :width => "100%"}
+                %param{:name => "movie", :value => "http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18324668&show_comments=true&auto_play=false&color=e15f00"}
+                %param{:name => "allowscriptaccess", :value => "always"}
+                %embed{:allowscriptaccess => "always", :height => "81", :src => "http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18324668&show_comments=true&auto_play=false&color=e15f00", :type => "application/x-shockwave-flash", :width => "100%"}
+              %span
+                %a{:href => "http://soundcloud.com/netaudiolondon/dave-at-cheshunt"} Dave at Cheshunt
+                by
+                %a{:href => "http://soundcloud.com/netaudiolondon"} NetaudioLondon
+            %li
+              %object{:height => "81", :width => "100%"}
+                %param{:name => "movie", :value => "http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18324668&show_comments=true&auto_play=false&color=e15f00"}
+                %param{:name => "allowscriptaccess", :value => "always"}
+                %embed{:allowscriptaccess => "always", :height => "81", :src => "http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18324668&show_comments=true&auto_play=false&color=e15f00", :type => "application/x-shockwave-flash", :width => "100%"}
+              %span
+                %a{:href => "http://soundcloud.com/netaudiolondon/dave-at-cheshunt"} Dave at Cheshunt
+                by
+                %a{:href => "http://soundcloud.com/netaudiolondon"} NetaudioLondon
+            %li
+              %object{:height => "81", :width => "100%"}
+                %param{:name => "movie", :value => "http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18324668&show_comments=true&auto_play=false&color=e15f00"}
+                %param{:name => "allowscriptaccess", :value => "always"}
+                %embed{:allowscriptaccess => "always", :height => "81", :src => "http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F18324668&show_comments=true&auto_play=false&color=e15f00", :type => "application/x-shockwave-flash", :width => "100%"}
+              %span
+                %a{:href => "http://soundcloud.com/netaudiolondon/dave-at-cheshunt"} Dave at Cheshunt
+                by
+                %a{:href => "http://soundcloud.com/netaudiolondon"} NetaudioLondon
+        %aside
+          %ul
+            %li
+              %h4= "YouTube channel"
+            %li
+              %h4= "MixCloud"
+            %li
+              %h4= "SoundCloud"
+            %li
+              %h4= "other"
+      %section#biography
+        %hgroup
+          %h1= link_to "Biography","#biography"
+        %article
+          = image_tag "span-14-wide.png"
+          %h2= "Ziggy Stardust - biography"
+          %p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida porttitor purus et tempus. Etiam semper, augue eget vestibulum auctor, dui libero rhoncus dui, vel hendrerit dui velit quis risus. Sed lectus nunc, blandit ut ullamcorper nec, cursus id libero. Quisque et quam nunc, at consequat nulla. Curabitur rutrum, dui eu gravida sagittis, mi sapien ornare mauris, sit amet blandit ante velit vel erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus a arcu tellus. Vivamus vel magna turpis. Cras lobortis sodales libero in dictum. Nam arcu diam, molestie vel cursus nec, vestibulum vel arcu. In nec justo a orci interdum mollis ac eget felis. Nullam eget nulla urna. Sed aliquet libero sed nulla ullamcorper quis luctus tellus tincidunt. Vivamus nec condimentum leo. Maecenas aliquet, sem vitae mollis mattis, justo orci ullamcorper lectus, et semper quam augue sed purus. Cras placerat adipiscing nisi, nec consectetur erat aliquam et."
+          %p= "Aenean gravida porttitor purus et tempus. Etiam semper, augue eget vestibulum auctor, dui libero rhoncus dui, vel hendrerit dui velit quis risus. Sed lectus nunc, blandit ut ullamcorper nec, cursus id libero. Quisque et quam nunc, at consequat nulla. Curabitur rutrum, dui eu gravida sagittis, mi sapien ornare mauris, sit amet blandit ante velit vel erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus a arcu tellus. Vivamus vel magna turpis. Cras lobortis sodales libero in dictum. Nam arcu diam, molestie vel cursus nec, vestibulum vel arcu. In nec justo a orci interdum mollis ac eget felis. Nullam eget nulla urna. Sed aliquet libero sed nulla ullamcorper quis luctus tellus tincidunt. Vivamus nec condimentum leo. Maecenas aliquet, sem vitae mollis mattis, justo orci ullamcorper lectus, et semper quam augue sed purus. Cras placerat adipiscing nisi, nec consectetur erat aliquam et."
+        %aside
+          %h4= "Discogs"
+          %ul
+            %li= "item 1"
+            %li= "item 2"
+            %li= "item 3"
+      %section#gigs
+        %hgroup
+          %h1= link_to "Gigs","#gigs"
+        %article
+          %h2= "Upcoming gigs"
+          %ul
+            %li
+              %date= "01/08/12"
+              %p= "place and description"
+              %p= "Town / Country"
+            %li
+              %date= "01/08/12"
+              %p= "place and description"
+              %p= "Town / Country"
+            %li
+              %date= "01/08/12"
+              %p= "place and description"
+              %p= "Town / Country"
+            %li
+              %date= "01/08/12"
+              %p= "place and description"
+              %p= "Town / Country"
 
-
-      #content
-        %hr
-        = yield
-  
-      #footer
-        %hr
-        
+        %aside
+      %section#contacts
+        %hgroup
+          %h1= link_to "Contacts","#contacts"
+        %article
+          %h2= "Contact Details"
+          %ul
+            %li
+              %h3= "Booking Agent"
+              %p= "description"
+              %p= "email@address"
+              %p= "phone"
+              %p
+                address1
+                %br
+                address line2
+                %br
+                Town and Postcode
+            %li
+              %h3= "Artist Contact"
+              %p= "description"
+              %p= "email@address"
+              %p= "phone"
+              %p
+                address1
+                %br
+                address line2
+                %br
+                Town and Postcode
+            %li
+              %h3= "Other Contact"
+              %p= "description"
+              %p= "email@address"
+              %p= "phone"
+              %p
+                address1
+                %br
+                address line2
+                %br
+                Town and Postcode
+        %aside
+      %footer
         &copy; Cenatus
-        
         #grid_debug{:style => "float:right"}
           %a#show_grid
             Show Grid
           |
           %a#hide_grid
             Hide Grid
-  
-        
+        %hr
+        = yield
+        %hr
 
