@@ -45,6 +45,12 @@ gem 'rails_admin_tag_list_field', :git => 'https://github.com/codeinvain/rails_a
 gem 'acts_as_tree'
 gem 'dalli'
 
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-script'
+  gem 'uglifier'
+end
+
 group :development, :test do
   gem "heroku_plus", :group => [:development]
   gem 'guard'
@@ -61,7 +67,6 @@ group :development, :test do
 end
 
 group :production do
-  #gem 'therubyracer-heroku', '0.8.1.pre3'
   gem 'pg'
 end
 
