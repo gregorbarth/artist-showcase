@@ -22,14 +22,14 @@ describe Asset do
   end
   
   it "has a name that is required" do
-    defined?(:name).should_not be_nil
     @asset = Asset.new
+    @asset.respond_to?(:name).should be_true
     @asset.should_not be_valid
   end  
   
   it "has a description that is required" do
-    defined?(:description).should_not be_nil
     @asset = Asset.new
+    @asset.respond_to?(:description).should be_true
     @asset.should_not be_valid
   end
 

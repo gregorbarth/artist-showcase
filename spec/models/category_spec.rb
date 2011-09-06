@@ -12,8 +12,8 @@ describe Category do
   end
 
   it "has a name that is required" do
-    defined?(:name).should_not be_nil
     @category = Category.new
+    @category.respond_to?(:name).should be_true
     @category.should_not be_valid
   end
                                             

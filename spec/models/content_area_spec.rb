@@ -6,9 +6,14 @@ describe ContentArea do
   end
 
   it "has a name that is required" do
-    defined?(:name).should_not be_nil
     @content_area = ContentArea.new
+    @content_area.respond_to?(:name).should be_true
     @content_area.should_not be_valid
   end
+
+  it "belongs to Page" do
+    ContentArea.reflect_on_association(:page).should_not be_nil
+  end
+
 
 end

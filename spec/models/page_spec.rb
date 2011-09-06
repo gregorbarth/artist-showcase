@@ -24,15 +24,25 @@ describe Page do
   end
 
   it "has a name that is required" do
-    defined?(:name).should_not be_nil
     @page = Page.new
+    @page.respond_to?(:name).should be_true
     @page.should_not be_valid
   end
 
   it "has a slug that is required" do
-    defined?(:name).should_not be_nil
     @page = Page.new
+    @page.respond_to?(:slug).should be_true
     @page.should_not be_valid
+  end
+
+  it "has tags" do
+    @page = Page.new
+    @page.respond_to?(:tag_list).should be_true
+  end
+
+  it "acts as tree" do
+    @page = Page.new
+    @page.respond_to?(:parent).should be_true
   end
 
 end

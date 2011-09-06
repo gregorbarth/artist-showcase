@@ -37,6 +37,23 @@ module CenatusCms
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password]
+    config.filter_parameters += [:password] 
+    
+    # Enable the asset pipeline
+    config.assets.enabled = true
+
+    # Version of your assets, change this if you want to expire all your assets
+    config.assets.version = '1.0'
+
+    # turn off helper generation in scaffold
+    config.generators.helper = false
+
+    # CMS config
+    # CenatusCms::Application::SITE_NAME
+    SITE_NAME = "Cenatus CMS"
+    SITE_URL = "http://cenatus.org/"
+    SITE_LOGO = "#{SITE_URL}images/home-logo.jpg"
+    FB_ADMIN = "541838134"
+    TWITTER_NAME = "mattspendlove"
   end
 end

@@ -5,28 +5,30 @@ class ApplicationController < ActionController::Base
   
   def twitter
     require "twitter"
-    # require "dalli"
 
-    # cache = Dalli::Client.new 'mc5.ec2.northscale.net'
     begin
-      @tweets = Twitter.user_timeline("mattspendlove", {:count => 4})
-      # cache.set("shopsilverburn", @tweets) if @tweets && Rails.env != "production"
-    # rescue Twitter::BadRequest  => erl
-    #   if Rails.env != "production"
-    #     @tweets = cache.get("shopsilverburn").first||default
-    #     logger.error("MSP rate limit exceeded: #{erl}")
-    # end
+
+      @tweets = Rails.cache.read(:tweets)
+
+      if @tweets.blank?
+        @tweets = Twitter.user_timeline(CenatusCms::Application::TWITTER_NAME, {:count => 1})
+        Rails.cache.write(:tweets, @tweets, :expires_in => 10.minutes)
+      end
+
+    rescue Twitter::BadRequest  => erl
+      @tweets = Rails.cache.read(:tweets)
+      logger.error("MSP rate limit exceeded: #{erl}")
     rescue Exception => e
       logger.error("MSP error fetch tweets: #{e}")
     end
-  end   
+  end
 
   def set_facebook_headers
-    @og_title = "Cenatus CMS"
+    @og_title = CenatusCms::Application::SITE_NAME
     @og_type = "website"
-    @og_url = "http://somewhere.com"
-    @og_image = "http://somewhere.com/images/home-logo.jpg"
-    @og_site_name = "Cenatus CMS"
-    @og_admins = "541838134"
+    @og_url = CenatusCms::Application::SITE_URL
+    @og_image = CenatusCms::Application::SITE_LOGO
+    @og_site_name = CenatusCms::Application::SITE_NAME
+    @og_admins = CenatusCms::Application::FB_ADMIN
   end
 end

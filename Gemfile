@@ -1,11 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', "=0.2.7"
+gem 'mysql2'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -32,17 +32,18 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jquery-rails"
 gem 'devise'
-gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git", :branch => "rails-3.0"
+gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
 gem 'compass'
 gem 'aws-s3'    
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "friendly_id", "~> 3.2.1"
-gem 'twitter', "= 1.2.0"
+gem 'twitter'
 gem 'acts_as_indexed'
 gem 'RedCloth'
 gem 'acts-as-taggable-on'
-gem 'rails_admin_tag_list_field', :git => 'https://github.com/kryzhovnik/rails_admin_tag_list_field.git'
+gem 'rails_admin_tag_list_field', :git => 'https://github.com/codeinvain/rails_admin_tag_list_field.git'
 gem 'acts_as_tree'
+gem 'dalli'
 
 group :development, :test do
   gem "heroku_plus", :group => [:development]
@@ -51,8 +52,8 @@ group :development, :test do
   gem 'rb-fsevent'
   gem 'growl'                                                                                                                          
   gem "rspec-rails", ">= 2.0.1"
-  gem "cucumber-rails", :group => [:development, :test]
-  gem "capybara", :group => [:development, :test]
+  gem "cucumber-rails"
+  gem "capybara"
   gem "taps"
   gem "sqlite3", "=1.3.3"
   gem "sqlite3-ruby", "=1.3.3"

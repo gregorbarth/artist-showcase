@@ -14,8 +14,8 @@ describe PagesController do
 
 
     it "should be successful" do
-         get 'dynamic'
-         response.should be_success
+       get 'dynamic'
+       response.should be_success
     end
   end  
     

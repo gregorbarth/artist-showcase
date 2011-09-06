@@ -2,16 +2,13 @@
 %html
   %head
     %title= @page_title or "Cenatus CMS"
-    
-    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
-    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
-    = stylesheet_link_tag 'compiled/application.css'
-    = stylesheet_link_tag 'compiled/link_icons.css', :media => 'screen, projection'
-    = stylesheet_link_tag :all
-    /[if lt IE 8]
-      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
-    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"
+    -#= auto_discovery_link_tag ""
+    
+    = stylesheet_link_tag :application
+
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 
     %meta{:property => "og:title",  :content => @og_title}
     %meta{:property => "og:type", :content => @og_type}
@@ -20,6 +17,8 @@
     %meta{:property => "og:site_name", :content => @og_site_name}
     %meta{:property => "fb:admins", :content => @og_admins}
 
+    = javascript_include_tag :application
+    
     :javascript
       jQuery(function($){
         $('#show_grid').click(function(){
