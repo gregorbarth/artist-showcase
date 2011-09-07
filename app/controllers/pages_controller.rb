@@ -2,11 +2,11 @@ class PagesController < ApplicationController
 
   
   def dynamic
-    @landing_section = Page.where(:name => "Landing").last
-    @listen_section = Page.where(:name => "Listen").last
-    @biography_section = Page.where(:name => "Biography").last
-    @gigs_section = Page.where(:name => "Gigs").last
-    @contact_section = Page.where(:name => "Contact").last
+    @landing_section = Page.where(:name => :Landing).last
+    @listen_section = Page.where(:name => :Listen).last
+    @biography_section = Page.where(:name => :Biography).last
+    @gigs_section = Page.where(:name => :Gigs).last
+    @contact_section = Page.where(:name => :Contact).last
 
     ##twitter()
 
