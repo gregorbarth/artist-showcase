@@ -1,6 +1,94 @@
-%h1= @landing_section.name
-
-%p	
-  - for content_area in @landing_section.content_areas do
-    %h3= content_area.name     
-    %p= content_area.content
+- if @landing_section.present?
+  %section#landing
+    .wrapper
+      %article
+        - for asset in @landing_section.assets do
+          = image_tag(asset.asset.url(:original), :alt => asset.description)
+        - for content_area in @landing_section.content_areas do
+          %h1= content_area.name
+          :textile
+            #{content_area.content}
+      %aside
+        %ul
+          %li
+            %h4= "Twitter"
+          %li
+            %h4= "Newsletter Subscribe"
+          %li
+            %h4= "Booking info"
+          %li
+            %h4= "Latest Tracks"
+- if @listen_section.present?
+  %section#listen
+    .wrapper
+      %article
+        %ul
+          - for content_area in @listen_section.content_areas do
+            %li
+              :textile
+                #{content_area.content}
+      %aside
+        %ul
+          %li
+            %h4= "YouTube channel"
+          %li
+            %h4= "MixCloud"
+          %li
+            %h4= "SoundCloud"
+          %li
+            %h4= "other"
+- if @biography_section.present?
+  %section#biography
+    .wrapper
+      %article
+        - for asset in @biography_section.assets do
+          = image_tag(asset.asset.url(:original), :alt => asset.description)
+        - for content_area in @biography_section.content_areas do
+          %h2= content_area.name
+          :textile
+            #{content_area.content}
+      %aside
+        %h4= "Discogs"
+        %ul
+          %li= "item 1"
+          %li= "item 2"
+          %li= "item 3"
+- if @gigs_section.present?
+  %section#gigs
+    .wrapper
+      %article
+        %h2= "Upcoming gigs"
+        %ul
+          -#- for content_area in @gigs_section.content_areas do
+          -#  %li
+          -#    :textile
+          -#      #{content_area.content}
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+      %aside
+- if @contact_section.present?
+  %section#contact
+    .wrapper
+      %article
+        %h2= "Contact Details"
+        %ul
+          - for content_area in @contact_section.content_areas do
+            %li
+              %h3= content_area.name
+              :textile
+                #{content_area.content}
+      %aside
