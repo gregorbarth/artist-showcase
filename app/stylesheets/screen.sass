@@ -26,8 +26,8 @@ form.bp
   // You'll probably want to remove the scaffolding once you start styling your site.
   +blueprint-scaffolding
 
-$aside-columns: floor(6)
-$hgroup-columns: floor(4)
+$right-columns: floor(6)
+$left-columns: floor(4)
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.three-col
@@ -35,19 +35,18 @@ body.three-col
     +container
   header, footer
     +column($blueprint-grid-columns)
-  hgroup
-    +column($hgroup-columns)
   article
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
     // $content-columns: ceil(2 * $blueprint-grid-columns / 3)
-    $article-columns: ($blueprint-grid-columns - $aside-columns - $hgroup-columns)
+    $article-columns: ($blueprint-grid-columns - $right-columns - $left-columns)
     // true means it's the last column in the row
     +column($article-columns)
+    +prepend($left-columns)
   aside
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
     // $sidebar-columns: floor($blueprint-grid-columns / 3)
-    +column($aside-columns, true)
+    +column($right-columns, true)
 
 
 

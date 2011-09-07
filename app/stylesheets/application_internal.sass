@@ -8,13 +8,19 @@
 $dark_blue: #3d66ac
 $sky_blue:  #90b3df
 
-
-
+//@font-face {
+//  font-family: AS_header_font;
+//  src: url('Sansation_Light.ttf'), url('Sansation_Light.eot') format("opentype");
+//  /* IE */ }
+//
+//@import url(http://fonts.googleapis.com/css?family=Podkova)
 
 // FONTS and LINK STYLES
 
+
+
 body.three-col.bp
-  color: black
+  color: #999
   font-family: Verdana, Geneva, sans-serif
   a
     text-decoration: underline
@@ -25,62 +31,86 @@ body.three-col.bp
     margin: 0
   h1, h2, h3, h4, h5, h6
     +header-text
-    font-family: Georgia, serif
+    font-family: 'Podkova', Georgia, serif
   h1
     font-size: 1.5em
     a:link, a:visited, a:active, a:hover
       text-decoration: none
       font-weight: normal
       color: black
+  h3
+    font-size: 1.2em
+    border-top: 1px solid black
+    padding-top: 0.3em
+    margin-bottom: 0.5em
+  //  HEADER styling
   #container
     header
+      padding-top: 18px
+      position: fixed
+      //width: 100%
+      z-index: 1000
+      background: url("white_nav.png") repeat-x scroll 0 0 transparent
+      height: 90px
+      .logo
+        font-size: 1.5em
+        font-color: black
+        background: url(span-4-rows-4.png) top left no-repeat
+        vertical-align: baseline
+        height: 72px
       nav
         ul
           li
-            font-family: Georgia, serif
-            font-size: 1.3em
+            font-size: 1.1em
             a:link, a:visited, a:active, a:hover
               text-decoration: none
               font-weight: normal
               color: black
-          li:first-child
-            font-size: 2em
+
+
 
 // STRUCTURE
 body.three-col.bp
   #container
-    padding-top: 20px
     header
+
+      .logo
+        +column(4)
       nav
-      ul
-        +horizontal-list-container
-        padding-left: 0
-        margin: 0
-        float: left
-        li
-          +horizontal-list-item
-          +column(2)
-          height: 70px
-          padding: 0px
-        li#homelogo
-          +column(4)
-        li#sociallinks
-          +column(5)
-    section
-      clear: both
-      overflow: hidden
-      border-top: 2px solid black
-      padding: 20px 0
-      aside
         ul
-          +no-bullets
+          +horizontal-list-container
           padding-left: 0
           margin: 0
           li
-            border-top: 1px solid black
-            padding: 0 0 10px 0
+            +horizontal-list-item
+            +column(2)
+            padding: 0px
+          li.contact
+            +column(6)
+          li.socialbookmarks
+            +inline-list
+            white-space: normal
+
+    section
+      clear: both
+      overflow: hidden
+      padding-top: 90px
+      .wrapper
+        border-top: 2px solid black
+        padding-top: 18px
+        aside
+          ul
+            +no-bullets
+            padding-left: 0
+            margin: 0
+            li
+              border-top: 1px solid black
+              padding: 0 0 10px 0
     section#landing, section#biography
-      p
+      p, h2
+        +column(10)
+    section#listen
+      ul
         +column(12)
     section#gigs
       ul li
@@ -97,7 +127,7 @@ body.three-col.bp
           margin: 0
         p:last-child
           +column(4)
-    section#contacts
+    section#contact
       ul
         +horizontal-list
         li
@@ -109,6 +139,7 @@ body.three-col.bp
     footer
       clear: both
       overflow: hidden
+      margin-top: 90px
       border-top: 2px solid black
       padding: 20px 0
 
