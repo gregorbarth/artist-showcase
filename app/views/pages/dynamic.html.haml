@@ -1,6 +1,6 @@
-%h1= @page.name
+%h1= @landing_section.name
 
 %p	
-  - for content_area in @page.content_areas do
+  - for content_area in @landing_section.content_areas do
     %h3= content_area.name     
     %p= content_area.content

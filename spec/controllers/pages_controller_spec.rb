@@ -9,7 +9,7 @@ describe PagesController do
   describe "GET 'dynamic'" do
 
     before :each do
-      Page.stub_chain(:where, :limit, :first).and_return(@page)
+      Page.stub_chain(:where, :first).and_return(@page)
     end
 
 
