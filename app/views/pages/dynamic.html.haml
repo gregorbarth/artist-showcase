@@ -1,6 +1,106 @@
-%h1= @page.name
-
-%p	
-  - for content_area in @page.content_areas do
-    %h3= content_area.name     
-    %p= content_area.content
+%section#home
+  - if @home_section.present?
+    .wrapper
+      .left-col
+        %h1= "Intro"
+      %article
+        - for asset in @home_section.assets do
+          = image_tag "span-12-wide.png"
+          -#= image_tag(asset.asset.url(:original), :alt => asset.description)
+        - for content_area in @home_section.content_areas do
+          %h2= content_area.name
+          :textile
+            #{content_area.content}
+      %aside
+        %ul
+          %li
+            %h4= "Twitter"
+          %li
+            %h4= "Newsletter Subscribe"
+          %li
+            %h4= "Booking info"
+          %li
+            %h4= "Latest Tracks"
+%section#listen
+  - if @listen_section.present?
+    .wrapper
+      .left-col
+        %h1= "Listen"
+      %article
+        %ul
+          - for content_area in @listen_section.content_areas do
+            %li
+              :textile
+                #{content_area.content}
+      %aside
+        %ul
+          %li
+            %h4= "YouTube channel"
+          %li
+            %h4= "MixCloud"
+          %li
+            %h4= "SoundCloud"
+          %li
+            %h4= "other"
+%section#biography
+  - if @biography_section.present?
+    .wrapper
+      .left-col
+        %h1="Biography"
+      %article
+        - for asset in @biography_section.assets do
+          = image_tag "span-12-wide.png"
+          -#= image_tag(asset.asset.url(:original), :alt => asset.description)
+        - for content_area in @biography_section.content_areas do
+          %h2= content_area.name
+          :textile
+            #{content_area.content}
+      %aside
+        %h4= "Discogs"
+        %ul
+          %li= "item 1"
+          %li= "item 2"
+          %li= "item 3"
+%section#gigs
+  - if @gigs_section.present?
+    .wrapper
+      .left-col
+        %h1= "Gigs"
+      %article
+        %h2= "Upcoming gigs"
+        %ul
+          -#- for content_area in @gigs_section.content_areas do
+          -#  %li
+          -#    :textile
+          -#      #{content_area.content}
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+          %li
+            %date= "01/08/12"
+            %p= "place and description"
+            %p= "Town / Country"
+      %aside
+%section#contact
+  - if @contact_section.present?
+    .wrapper
+      .left-col
+        %h1= "Contact"
+      %article
+        %h2= "Contact Details"
+        %ul
+          - for content_area in @contact_section.content_areas do
+            %li
+              %h3= content_area.name
+              :textile
+                #{content_area.content}
+      %aside

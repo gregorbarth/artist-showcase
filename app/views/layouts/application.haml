@@ -1,5 +1,5 @@
 !!!
-%html
+%html.no-js
   %head
     %title= @page_title or "Cenatus CMS"
 
@@ -18,6 +18,8 @@
     %meta{:property => "fb:admins", :content => @og_admins}
 
     = javascript_include_tag :application
+
+    %link{:href => "http://fonts.googleapis.com/css?family=Podkova", :rel => "stylesheet", :type => "text/css"}
     
     :javascript
       jQuery(function($){
@@ -32,38 +34,30 @@
       
     = csrf_meta_tag
 
-  %body.two-col.bp
+  %body.three-col.bp
     
     #container
-      #header
-        %ul#topnav
-          %li= nav_link "link1","http://cenatus.org"
-          %li= nav_link "link2","http://netaudiolondon.org"
-          %li= nav_link "link3","javascript:void(0);"
-      
-      #sidebar
-        %ul
-          %li= link_to "link1","javascript:void(0);"
-          %li= link_to "link2","javascript:void(0);"
-          - for page in Page.all do
-            %li= nav_link page.name, "/#{page.slug}"
-
-
-      #content
-        %hr
-        = yield
-  
-      #footer
-        %hr
-        
-        &copy; Cenatus
-        
-        #grid_debug{:style => "float:right"}
-          %a#show_grid
-            Show Grid
-          |
-          %a#hide_grid
-            Hide Grid
-  
-        
-
+      %header
+        .logo= "Ziggi Stardust"
+        %nav
+          %ul
+            %li.landing= nav_link "Home","#home"
+            %li.listen= nav_link "Listen","#listen"
+            %li.biography= nav_link "Biography","#biography"
+            %li.gigs= nav_link "Gigs","#gigs"
+            %li.contact= nav_link "Contact","#contact"
+            %li.socialbookmarks
+              = link_to(image_tag("sb/facebook_16.png"), "/")
+              = link_to(image_tag("sb/lastfm_16.png"), "/")
+              = link_to(image_tag("sb/twitter_16.png"), "/")
+              = link_to(image_tag("sb/tumblr_16.png"), "/")
+              = link_to(image_tag("sb/youtube_16.png"), "/")
+      = yield
+      %footer
+        &copy; Cenatus CIC &amp; Give Up Art
+        -##grid_debug{:style => "float:right"}
+        -#  %a#show_grid
+        -#    Show Grid
+        -#  |
+        -#  %a#hide_grid
+        -#    Hide Grid

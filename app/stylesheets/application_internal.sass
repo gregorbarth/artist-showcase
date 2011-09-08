@@ -8,29 +8,142 @@
 $dark_blue: #3d66ac
 $sky_blue:  #90b3df
 
+//@font-face {
+//  font-family: AS_header_font;
+//  src: url('Sansation_Light.ttf'), url('Sansation_Light.eot') format("opentype");
+//  /* IE */ }
+//
+//@import url(http://fonts.googleapis.com/css?family=Podkova)
 
-body
-  color: $dark_blue
+// FONTS and LINK STYLES
+
+
+
+body.three-col.bp
+  color: #999
+  //font-family: Verdana, Geneva, sans-serif
   a
     text-decoration: underline
     +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
+  ul
+    +no-bullets
+    padding-left: 0
+    margin: 0
+  h1, h2, h3, h4, h5, h6
+    +header-text
+    //font-family: 'Podkova', Georgia, serif
+  h1, h2
+    font-size: 1.5em
+    margin-top: 1em
+  h3
+    font-size: 1.2em
+    border-top: 1px solid black
+    padding-top: 0.3em
+    margin-bottom: 0.5em
+  //  HEADER styling
+  #container
+    header
+      padding-top: 18px
+      position: fixed
+      //width: 100%
+      z-index: 1000
+      background: url("white_nav.png") repeat-x scroll 0 0 transparent
+      height: 90px
+      .logo
+        font-size: 1.5em
+        font-color: black
+        background: url(span-4-rows-4.png) top left no-repeat
+        vertical-align: baseline
+        height: 72px
+      nav
+        ul
+          li
+            font-size: 1.1em
+            a:link, a:visited, a:active, a:hover
+              text-decoration: none
+              font-weight: normal
+              color: black
 
-h1, h2, h3, h4, h5, h6
-  +header-text
-  text-transform: uppercase      
-  
-  
-#header
-  #topnav
-    +horizontal-list-container
-    float: right
-    li
-      +horizontal-list-item
-      +column(2)
-      height: 100px
-      margin: 0px 3px
-      padding: 0px
 
 
-.active
-  font-weight: bold 
+// STRUCTURE
+body.three-col.bp
+  #container
+    header
+
+      .logo
+        +column(4)
+      nav
+        ul
+          +horizontal-list-container
+          padding-left: 0
+          margin: 0
+          li
+            +horizontal-list-item
+            +column(2)
+            padding: 0px
+          li.contact
+            +column(6)
+          li.socialbookmarks
+            +inline-list
+            white-space: normal
+    h2
+      margin-top: 90px
+    section
+      clear: both
+      overflow: hidden
+      padding-top: 90px
+      .wrapper
+        border-top: 2px solid black
+        padding-top: 18px
+        aside
+          ul
+            +no-bullets
+            padding-left: 0
+            margin: 0
+            li
+              border-top: 1px solid black
+              padding: 0 0 10px 0
+      //section#home, section#biography
+      p, h2
+        +column(10)
+      h2
+        margin-top: 1em
+    section#listen
+      ul
+        +column(12)
+    section#gigs
+      ul li
+        clear: both
+        overflow: hidden
+        border-top: 1px solid black
+        padding: 0 0 10px 0
+        date
+          +column(4)
+          float: left
+        p
+          +column(6)
+          float: left
+          margin: 0
+        p:last-child
+          +column(4)
+    section#contact
+      ul
+        +column(14)
+        +horizontal-list
+        li
+          +column(4)
+          padding: 0
+          p
+            margin: 0
+
+    footer
+      clear: both
+      overflow: hidden
+      margin-top: 90px
+      border-top: 2px solid black
+      padding: 20px 0
+      margin-bottom: 500px
+
+
+
