@@ -1,10 +1,10 @@
-- if @landing_section.present?
-  %section#landing
+- if @home_section.present?
+  %section#home
     .wrapper
       %article
-        - for asset in @landing_section.assets do
+        - for asset in @home_section.assets do
           = image_tag(asset.asset.url(:original), :alt => asset.description)
-        - for content_area in @landing_section.content_areas do
+        - for content_area in @home_section.content_areas do
           %h1= content_area.name
           :textile
             #{content_area.content}

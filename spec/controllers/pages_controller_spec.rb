@@ -17,10 +17,10 @@ describe PagesController do
        response.should be_success
     end
 
-    it "assigns @landing_section" do
+    it "assigns @home_section" do
       get 'dynamic'
-      assigns(:landing_section).should_not be_nil
-      assigns(:landing_section).should eq(@section)
+      assigns(:home_section).should_not be_nil
+      assigns(:home_section).should eq(@section)
     end
 
     it "assigns @listen_section" do

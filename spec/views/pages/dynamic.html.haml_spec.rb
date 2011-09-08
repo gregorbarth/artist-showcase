@@ -4,7 +4,7 @@ describe "pages/dynamic.html.haml" do
   describe "simple render" do
     it "renders" do
 
-      assign(:landing_section, [])
+      assign(:home_section, [])
       assign(:listen_section, [])
       assign(:biography_section, [])
       assign(:gigs_section, [])
@@ -12,8 +12,11 @@ describe "pages/dynamic.html.haml" do
 
       render
 
-      rendered.should =~ /<section id=/
+      rendered.should =~ /<section/
     end
+
+
+
   end
 
   #describe "populated render" do
