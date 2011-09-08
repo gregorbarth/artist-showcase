@@ -1,11 +1,13 @@
-- if @home_section.present?
-  %section#home
+%section#home
+  - if @home_section.present?
     .wrapper
+      .left-col
+        %h1= "Intro"
       %article
         - for asset in @home_section.assets do
           = image_tag(asset.asset.url(:original), :alt => asset.description)
         - for content_area in @home_section.content_areas do
-          %h1= content_area.name
+          %h2= content_area.name
           :textile
             #{content_area.content}
       %aside
@@ -18,9 +20,11 @@
             %h4= "Booking info"
           %li
             %h4= "Latest Tracks"
-- if @listen_section.present?
-  %section#listen
+%section#listen
+  - if @listen_section.present?
     .wrapper
+      .left-col
+        %h1= "Listen"
       %article
         %ul
           - for content_area in @listen_section.content_areas do
@@ -37,9 +41,11 @@
             %h4= "SoundCloud"
           %li
             %h4= "other"
-- if @biography_section.present?
-  %section#biography
+%section#biography
+  - if @biography_section.present?
     .wrapper
+      .left-col
+        %h1="Biography"
       %article
         - for asset in @biography_section.assets do
           = image_tag(asset.asset.url(:original), :alt => asset.description)
@@ -53,9 +59,11 @@
           %li= "item 1"
           %li= "item 2"
           %li= "item 3"
-- if @gigs_section.present?
-  %section#gigs
+%section#gigs
+  - if @gigs_section.present?
     .wrapper
+      .left-col
+        %h1= "Gigs"
       %article
         %h2= "Upcoming gigs"
         %ul
@@ -80,9 +88,11 @@
             %p= "place and description"
             %p= "Town / Country"
       %aside
-- if @contact_section.present?
-  %section#contact
+%section#contact
+  - if @contact_section.present?
     .wrapper
+      .left-col
+        %h1= "Contact"
       %article
         %h2= "Contact Details"
         %ul

@@ -21,7 +21,7 @@ $sky_blue:  #90b3df
 
 body.three-col.bp
   color: #999
-  font-family: Verdana, Geneva, sans-serif
+  //font-family: Verdana, Geneva, sans-serif
   a
     text-decoration: underline
     +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
@@ -31,13 +31,10 @@ body.three-col.bp
     margin: 0
   h1, h2, h3, h4, h5, h6
     +header-text
-    font-family: 'Podkova', Georgia, serif
-  h1
+    //font-family: 'Podkova', Georgia, serif
+  h1, h2
     font-size: 1.5em
-    a:link, a:visited, a:active, a:hover
-      text-decoration: none
-      font-weight: normal
-      color: black
+    margin-top: 1em
   h3
     font-size: 1.2em
     border-top: 1px solid black
@@ -90,7 +87,8 @@ body.three-col.bp
           li.socialbookmarks
             +inline-list
             white-space: normal
-
+    h2
+      margin-top: 90px
     section
       clear: both
       overflow: hidden
@@ -106,9 +104,11 @@ body.three-col.bp
             li
               border-top: 1px solid black
               padding: 0 0 10px 0
-    section#landing, section#biography
+      //section#home, section#biography
       p, h2
         +column(10)
+      h2
+        margin-top: 1em
     section#listen
       ul
         +column(12)
@@ -129,6 +129,7 @@ body.three-col.bp
           +column(4)
     section#contact
       ul
+        +column(14)
         +horizontal-list
         li
           +column(4)
@@ -142,6 +143,7 @@ body.three-col.bp
       margin-top: 90px
       border-top: 2px solid black
       padding: 20px 0
+      margin-bottom: 500px
 
 
 

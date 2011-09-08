@@ -577,18 +577,28 @@ body.three-col header, body.three-col footer {
   overflow-x: hidden;
 }
 /* line 38, ../../stylesheets/screen.sass */
+body.three-col .left-col {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+}
+/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.three-col .left-col {
+  overflow-x: hidden;
+}
+/* line 40, ../../stylesheets/screen.sass */
 body.three-col article {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 550px;
-  padding-left: 160px;
 }
 /* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.three-col article {
   overflow-x: hidden;
 }
-/* line 46, ../../stylesheets/screen.sass */
+/* line 48, ../../stylesheets/screen.sass */
 body.three-col aside {
   display: inline;
   float: left;

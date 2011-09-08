@@ -35,6 +35,8 @@ body.three-col
     +container
   header, footer
     +column($blueprint-grid-columns)
+  .left-col
+    +column($left-columns)
   article
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
@@ -42,7 +44,7 @@ body.three-col
     $article-columns: ($blueprint-grid-columns - $right-columns - $left-columns)
     // true means it's the last column in the row
     +column($article-columns)
-    +prepend($left-columns)
+    //+prepend($left-columns)    if no left col
   aside
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
     // $sidebar-columns: floor($blueprint-grid-columns / 3)

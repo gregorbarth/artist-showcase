@@ -66,7 +66,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 22, ../../stylesheets/application_internal.sass */
 body.three-col.bp {
   color: #999999;
-  font-family: Verdana, Geneva, sans-serif;
 }
 /* line 25, ../../stylesheets/application_internal.sass */
 body.three-col.bp a {
@@ -105,26 +104,20 @@ body.three-col.bp ul li {
 body.three-col.bp h1, body.three-col.bp h2, body.three-col.bp h3, body.three-col.bp h4, body.three-col.bp h5, body.three-col.bp h6 {
   font-weight: normal;
   color: #222222;
-  font-family: "Podkova", Georgia, serif;
 }
 /* line 35, ../../stylesheets/application_internal.sass */
-body.three-col.bp h1 {
+body.three-col.bp h1, body.three-col.bp h2 {
   font-size: 1.5em;
+  margin-top: 1em;
 }
-/* line 37, ../../stylesheets/application_internal.sass */
-body.three-col.bp h1 a:link, body.three-col.bp h1 a:visited, body.three-col.bp h1 a:active, body.three-col.bp h1 a:hover {
-  text-decoration: none;
-  font-weight: normal;
-  color: black;
-}
-/* line 41, ../../stylesheets/application_internal.sass */
+/* line 38, ../../stylesheets/application_internal.sass */
 body.three-col.bp h3 {
   font-size: 1.2em;
   border-top: 1px solid black;
   padding-top: 0.3em;
   margin-bottom: 0.5em;
 }
-/* line 48, ../../stylesheets/application_internal.sass */
+/* line 45, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header {
   padding-top: 18px;
   position: fixed;
@@ -132,7 +125,7 @@ body.three-col.bp #container header {
   background: url("white_nav.png") repeat-x scroll 0 0 transparent;
   height: 90px;
 }
-/* line 55, ../../stylesheets/application_internal.sass */
+/* line 52, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .logo {
   font-size: 1.5em;
   font-color: black;
@@ -140,18 +133,18 @@ body.three-col.bp #container header .logo {
   vertical-align: baseline;
   height: 72px;
 }
-/* line 63, ../../stylesheets/application_internal.sass */
+/* line 60, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li {
   font-size: 1.1em;
 }
-/* line 65, ../../stylesheets/application_internal.sass */
+/* line 62, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li a:link, body.three-col.bp #container header nav ul li a:visited, body.three-col.bp #container header nav ul li a:active, body.three-col.bp #container header nav ul li a:hover {
   text-decoration: none;
   font-weight: normal;
   color: black;
 }
 
-/* line 77, ../../stylesheets/application_internal.sass */
+/* line 74, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .logo {
   display: inline;
   float: left;
@@ -162,7 +155,7 @@ body.three-col.bp #container header .logo {
 * html body.three-col.bp #container header .logo {
   overflow-x: hidden;
 }
-/* line 80, ../../stylesheets/application_internal.sass */
+/* line 77, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul {
   margin: 0;
   padding: 0;
@@ -172,7 +165,7 @@ body.three-col.bp #container header nav ul {
   padding-left: 0;
   margin: 0;
 }
-/* line 84, ../../stylesheets/application_internal.sass */
+/* line 81, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li {
   list-style-image: none;
   list-style-type: none;
@@ -204,7 +197,7 @@ body.three-col.bp #container header nav ul li.last {
 * html body.three-col.bp #container header nav ul li {
   overflow-x: hidden;
 }
-/* line 88, ../../stylesheets/application_internal.sass */
+/* line 85, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li.contact {
   display: inline;
   float: left;
@@ -215,7 +208,7 @@ body.three-col.bp #container header nav ul li.contact {
 * html body.three-col.bp #container header nav ul li.contact {
   overflow-x: hidden;
 }
-/* line 90, ../../stylesheets/application_internal.sass */
+/* line 87, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li.socialbookmarks {
   list-style-type: none;
   white-space: normal;
@@ -226,18 +219,22 @@ body.three-col.bp #container header nav ul li.socialbookmarks, body.three-col.bp
   padding: 0px;
   display: inline;
 }
-/* line 94, ../../stylesheets/application_internal.sass */
+/* line 90, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container h2 {
+  margin-top: 90px;
+}
+/* line 92, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section {
   clear: both;
   overflow: hidden;
   padding-top: 90px;
 }
-/* line 98, ../../stylesheets/application_internal.sass */
+/* line 96, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .wrapper {
   border-top: 2px solid black;
   padding-top: 18px;
 }
-/* line 102, ../../stylesheets/application_internal.sass */
+/* line 100, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .wrapper aside ul {
   list-style: none;
   padding-left: 0;
@@ -249,21 +246,25 @@ body.three-col.bp #container section .wrapper aside ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 106, ../../stylesheets/application_internal.sass */
+/* line 104, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .wrapper aside ul li {
   border-top: 1px solid black;
   padding: 0 0 10px 0;
 }
-/* line 110, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container section#landing p, body.three-col.bp #container section#landing h2, body.three-col.bp #container section#biography p, body.three-col.bp #container section#biography h2 {
+/* line 108, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section p, body.three-col.bp #container section h2 {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 390px;
 }
 /* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container section#landing p, * html body.three-col.bp #container section#landing h2, * html body.three-col.bp #container section#biography p, * html body.three-col.bp #container section#biography h2 {
+* html body.three-col.bp #container section p, * html body.three-col.bp #container section h2 {
   overflow-x: hidden;
+}
+/* line 110, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section h2 {
+  margin-top: 1em;
 }
 /* line 113, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen ul {
@@ -321,11 +322,19 @@ body.three-col.bp #container section#gigs ul li p:last-child {
 }
 /* line 131, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 550px;
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1;
+}
+/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.three-col.bp #container section#contact ul {
+  overflow-x: hidden;
 }
 /* line 60, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 body.three-col.bp #container section#contact ul li {
@@ -350,7 +359,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 133, ../../stylesheets/application_internal.sass */
+/* line 134, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   display: inline;
   float: left;
@@ -362,15 +371,16 @@ body.three-col.bp #container section#contact ul li {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 136, ../../stylesheets/application_internal.sass */
+/* line 137, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0;
 }
-/* line 139, ../../stylesheets/application_internal.sass */
+/* line 140, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   clear: both;
   overflow: hidden;
   margin-top: 90px;
   border-top: 2px solid black;
   padding: 20px 0;
+  margin-bottom: 500px;
 }

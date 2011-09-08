@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe "pages/dynamic.html.haml" do
+  before :each do
+    @section = mock_model(Page)
+  end
+
   describe "simple render" do
     it "renders" do
 
@@ -11,8 +15,12 @@ describe "pages/dynamic.html.haml" do
       assign(:contact_section, [])
 
       render
-
-      rendered.should =~ /<section/
+      #puts "ANDI [#{rendered}]"
+      rendered.should =~ /<section id='home'>/
+      rendered.should =~ /<section id='listen'>/
+      rendered.should =~ /<section id='biography'>/
+      rendered.should =~ /<section id='gigs'>/
+      rendered.should =~ /<section id='contact'>/
     end
 
 
