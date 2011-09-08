@@ -5,7 +5,8 @@
         %h1= "Intro"
       %article
         - for asset in @home_section.assets do
-          = image_tag(asset.asset.url(:original), :alt => asset.description)
+          = image_tag "span-12-wide.png"
+          -#= image_tag(asset.asset.url(:original), :alt => asset.description)
         - for content_area in @home_section.content_areas do
           %h2= content_area.name
           :textile
@@ -48,7 +49,8 @@
         %h1="Biography"
       %article
         - for asset in @biography_section.assets do
-          = image_tag(asset.asset.url(:original), :alt => asset.description)
+          = image_tag "span-12-wide.png"
+          -#= image_tag(asset.asset.url(:original), :alt => asset.description)
         - for content_area in @biography_section.content_areas do
           %h2= content_area.name
           :textile
