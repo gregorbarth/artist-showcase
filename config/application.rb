@@ -62,5 +62,6 @@ module CenatusCms
     SITE_LOGO = "#{SITE_URL}images/home-logo.jpg"
     FB_ADMIN = "541838134"
     TWITTER_NAME = "mattspendlove"
+    MAILER_URL = "https://madmimi.com/signups/subscribe/27129"
   end
 end

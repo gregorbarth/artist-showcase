@@ -19,7 +19,7 @@
 
     = javascript_include_tag :application
 
-    %link{:href => "http://fonts.googleapis.com/css?family=Podkova", :rel => "stylesheet", :type => "text/css"}
+    -#%link{:href => "http://fonts.googleapis.com/css?family=Podkova", :rel => "stylesheet", :type => "text/css"}
     
     :javascript
       jQuery(function($){
@@ -46,12 +46,12 @@
             %li.biography= nav_link "Biography","#biography"
             %li.gigs= nav_link "Gigs","#gigs"
             %li.contact= nav_link "Contact","#contact"
-            %li.socialbookmarks
-              = link_to(image_tag("sb/facebook_16.png"), "/")
-              = link_to(image_tag("sb/lastfm_16.png"), "/")
-              = link_to(image_tag("sb/twitter_16.png"), "/")
-              = link_to(image_tag("sb/tumblr_16.png"), "/")
-              = link_to(image_tag("sb/youtube_16.png"), "/")
+        .socialbookmarks
+          = link_to(image_tag("sb/facebook_16.png"), "/")
+          = link_to(image_tag("sb/lastfm_16.png"), "/")
+          = link_to(image_tag("sb/twitter_16.png"), "/")
+          = link_to(image_tag("sb/tumblr_16.png"), "/")
+          = link_to(image_tag("sb/youtube_16.png"), "/")
       = yield
       %footer
         &copy; Cenatus CIC &amp; Give Up Art

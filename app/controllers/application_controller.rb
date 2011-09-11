@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
       @tweets = Rails.cache.read(:tweets)
 
       if @tweets.blank?
-        @tweets = Twitter.user_timeline(CenatusCms::Application::TWITTER_NAME, {:count => 1})
+        @tweets = Twitter.user_timeline(CenatusCms::Application::TWITTER_NAME, {:count => 3})
         Rails.cache.write(:tweets, @tweets, :expires_in => 10.minutes)
       end
 

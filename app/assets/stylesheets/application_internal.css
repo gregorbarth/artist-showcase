@@ -133,18 +133,22 @@ body.three-col.bp #container header .logo {
   vertical-align: baseline;
   height: 72px;
 }
-/* line 60, ../../stylesheets/application_internal.sass */
+/* line 58, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header nav {
+  float: left;
+}
+/* line 61, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li {
   font-size: 1.1em;
 }
-/* line 62, ../../stylesheets/application_internal.sass */
+/* line 63, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li a:link, body.three-col.bp #container header nav ul li a:visited, body.three-col.bp #container header nav ul li a:active, body.three-col.bp #container header nav ul li a:hover {
   text-decoration: none;
   font-weight: normal;
   color: black;
 }
 
-/* line 74, ../../stylesheets/application_internal.sass */
+/* line 75, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .logo {
   display: inline;
   float: left;
@@ -155,7 +159,7 @@ body.three-col.bp #container header .logo {
 * html body.three-col.bp #container header .logo {
   overflow-x: hidden;
 }
-/* line 77, ../../stylesheets/application_internal.sass */
+/* line 78, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul {
   margin: 0;
   padding: 0;
@@ -165,7 +169,7 @@ body.three-col.bp #container header nav ul {
   padding-left: 0;
   margin: 0;
 }
-/* line 81, ../../stylesheets/application_internal.sass */
+/* line 82, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li {
   list-style-image: none;
   list-style-type: none;
@@ -197,7 +201,7 @@ body.three-col.bp #container header nav ul li.last {
 * html body.three-col.bp #container header nav ul li {
   overflow-x: hidden;
 }
-/* line 85, ../../stylesheets/application_internal.sass */
+/* line 86, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li.contact {
   display: inline;
   float: left;
@@ -208,33 +212,42 @@ body.three-col.bp #container header nav ul li.contact {
 * html body.three-col.bp #container header nav ul li.contact {
   overflow-x: hidden;
 }
-/* line 87, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li.socialbookmarks {
+/* line 88, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .socialbookmarks {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
   list-style-type: none;
   white-space: normal;
+  float: left;
+}
+/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.three-col.bp #container header .socialbookmarks {
+  overflow-x: hidden;
 }
 /* line 5, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
-body.three-col.bp #container header nav ul li.socialbookmarks, body.three-col.bp #container header nav ul li.socialbookmarks li {
+body.three-col.bp #container header .socialbookmarks, body.three-col.bp #container header .socialbookmarks li {
   margin: 0px;
   padding: 0px;
   display: inline;
 }
-/* line 90, ../../stylesheets/application_internal.sass */
+/* line 93, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container h2 {
   margin-top: 90px;
 }
-/* line 92, ../../stylesheets/application_internal.sass */
+/* line 95, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section {
-  clear: both;
-  overflow: hidden;
   padding-top: 90px;
 }
-/* line 96, ../../stylesheets/application_internal.sass */
+/* line 98, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .wrapper {
+  clear: both;
+  overflow: hidden;
   border-top: 2px solid black;
   padding-top: 18px;
 }
-/* line 100, ../../stylesheets/application_internal.sass */
+/* line 104, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .wrapper aside ul {
   list-style: none;
   padding-left: 0;
@@ -246,12 +259,21 @@ body.three-col.bp #container section .wrapper aside ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 104, ../../stylesheets/application_internal.sass */
+/* line 108, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .wrapper aside ul li {
   border-top: 1px solid black;
   padding: 0 0 10px 0;
 }
-/* line 108, ../../stylesheets/application_internal.sass */
+/* line 111, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section .wrapper aside ul li li {
+  border-top: 0px solid black;
+  padding: 0 0 10px 0;
+}
+/* line 114, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section .wrapper aside ul li input {
+  margin: 5px 0;
+}
+/* line 119, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section p, body.three-col.bp #container section h2 {
   display: inline;
   float: left;
@@ -262,11 +284,11 @@ body.three-col.bp #container section p, body.three-col.bp #container section h2 
 * html body.three-col.bp #container section p, * html body.three-col.bp #container section h2 {
   overflow-x: hidden;
 }
-/* line 110, ../../stylesheets/application_internal.sass */
+/* line 121, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section h2 {
   margin-top: 1em;
 }
-/* line 113, ../../stylesheets/application_internal.sass */
+/* line 126, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen ul {
   display: inline;
   float: left;
@@ -277,14 +299,14 @@ body.three-col.bp #container section#listen ul {
 * html body.three-col.bp #container section#listen ul {
   overflow-x: hidden;
 }
-/* line 116, ../../stylesheets/application_internal.sass */
+/* line 129, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li {
   clear: both;
   overflow: hidden;
   border-top: 1px solid black;
   padding: 0 0 10px 0;
 }
-/* line 121, ../../stylesheets/application_internal.sass */
+/* line 134, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li date {
   display: inline;
   float: left;
@@ -296,7 +318,7 @@ body.three-col.bp #container section#gigs ul li date {
 * html body.three-col.bp #container section#gigs ul li date {
   overflow-x: hidden;
 }
-/* line 124, ../../stylesheets/application_internal.sass */
+/* line 137, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li p {
   display: inline;
   float: left;
@@ -309,7 +331,7 @@ body.three-col.bp #container section#gigs ul li p {
 * html body.three-col.bp #container section#gigs ul li p {
   overflow-x: hidden;
 }
-/* line 128, ../../stylesheets/application_internal.sass */
+/* line 141, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li p:last-child {
   display: inline;
   float: left;
@@ -320,7 +342,7 @@ body.three-col.bp #container section#gigs ul li p:last-child {
 * html body.three-col.bp #container section#gigs ul li p:last-child {
   overflow-x: hidden;
 }
-/* line 131, ../../stylesheets/application_internal.sass */
+/* line 144, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul {
   display: inline;
   float: left;
@@ -359,7 +381,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 134, ../../stylesheets/application_internal.sass */
+/* line 147, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   display: inline;
   float: left;
@@ -371,11 +393,11 @@ body.three-col.bp #container section#contact ul li {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 137, ../../stylesheets/application_internal.sass */
+/* line 150, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0;
 }
-/* line 140, ../../stylesheets/application_internal.sass */
+/* line 152, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   clear: both;
   overflow: hidden;
@@ -383,4 +405,47 @@ body.three-col.bp #container footer {
   border-top: 2px solid black;
   padding: 20px 0;
   margin-bottom: 500px;
+}
+
+/* line 161, ../../stylesheets/application_internal.sass */
+article #slider {
+  width: 470px;
+  height: 264px;
+  overflow: hidden;
+}
+/* line 162, ../../stylesheets/application_internal.sass */
+article #slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 166, ../../stylesheets/application_internal.sass */
+article #slider li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 470px;
+  height: 264px;
+  overflow: hidden;
+}
+/* line 176, ../../stylesheets/application_internal.sass */
+article ol#controls {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  overflow: hidden;
+  clear: both;
+}
+/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html article ol#controls {
+  overflow-x: hidden;
+}
+/* line 183, ../../stylesheets/application_internal.sass */
+article ol#controls li {
+  float: left;
+  padding-right: 1em;
 }

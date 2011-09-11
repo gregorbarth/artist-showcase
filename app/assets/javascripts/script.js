@@ -1,7 +1,14 @@
 $(document).ready(function() {
-    $('header').onePageNav({
+    $('nav').onePageNav({
         currentClass: 'current',
         changeHash: true,
         scrollSpeed: 750
     });
+
+	$("#slider").easySlider({
+		auto: true,
+		continuous: true,
+		numeric: true
+	});
+
 });

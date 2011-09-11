@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     @gigs_section = Page.where(:name => :Gigs).last
     @contact_section = Page.where(:name => :Contact).last
 
-    ##twitter()
+    twitter()
 
     #
     #slug= params[:slug].blank? ? "home" : params[:slug]

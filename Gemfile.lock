@@ -195,6 +195,8 @@ GEM
       rack
     rack-test (0.6.1)
       rack (>= 1.0)
+    rails_autolink (1.0.2)
+      rails (~> 3.1.0.a)
     rake (0.9.2)
     rb-fsevent (0.4.3.1)
     rdoc (3.9.4)
@@ -298,6 +300,7 @@ DEPENDENCIES
   rails!
   rails_admin!
   rails_admin_tag_list_field!
+  rails_autolink
   rb-fsevent
   rspec-rails (>= 2.0.1)
   sass-rails

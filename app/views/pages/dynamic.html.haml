@@ -4,9 +4,14 @@
       .left-col
         %h1= "Intro"
       %article
-        - for asset in @home_section.assets do
-          = image_tag "span-12-wide.png"
-          -#= image_tag(asset.asset.url(:original), :alt => asset.description)
+        #slider
+          %ul
+            - for asset in @home_section.assets do
+              %li
+                = image_tag(asset.asset.url(:original), :alt => asset.description)
+
+
+
         - for content_area in @home_section.content_areas do
           %h2= content_area.name
           :textile
@@ -15,8 +20,27 @@
         %ul
           %li
             %h4= "Twitter"
+            %ul#twitter_update_list
+              - if @tweets.present?
+                - for tweet in @tweets do
+                  %li
+                    %span= sanitize(auto_link(tweet.text).html_safe)
+                    = link_to "#{time_ago_in_words(tweet.created_at)} ago", "http://twitter.com/#{CenatusCms::Application::TWITTER_NAME}/status/#{tweet.id_str}", :style => "font-size:85%"
+              - else
+                %li
+                  %span
+                    Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
           %li
             %h4= "Newsletter Subscribe"
+            %form{:action => CenatusCms::Application::MAILER_URL, :method => "post"}
+              %div
+                %input#signup_first_name{:name => "signup[first_name]", :type => "text", :value => "First Name"}
+                %br
+                %input#signup_last_name{:name => "signup[last_name]", :type => "text", :value => "Last Name"}
+                %br
+                %input#signup_email{:name => "signup[email]", :type => "text", :value => "Email"}
+                %br
+                %input.button{:name => "commit", :type => "submit", :value => "Sign Up"}
           %li
             %h4= "Booking info"
           %li

@@ -56,6 +56,7 @@ body.three-col.bp
         vertical-align: baseline
         height: 72px
       nav
+        float: left
         ul
           li
             font-size: 1.1em
@@ -84,16 +85,19 @@ body.three-col.bp
             padding: 0px
           li.contact
             +column(6)
-          li.socialbookmarks
-            +inline-list
-            white-space: normal
+      .socialbookmarks
+        +column(2)
+        +inline-list
+        white-space: normal
+        float: left
     h2
       margin-top: 90px
     section
-      clear: both
-      overflow: hidden
+
       padding-top: 90px
       .wrapper
+        clear: both
+        overflow: hidden
         border-top: 2px solid black
         padding-top: 18px
         aside
@@ -104,11 +108,20 @@ body.three-col.bp
             li
               border-top: 1px solid black
               padding: 0 0 10px 0
+              li
+                border-top: 0px solid black
+                padding: 0 0 10px 0
+              input
+                margin: 5px 0
+
+
       //section#home, section#biography
       p, h2
         +column(10)
       h2
         margin-top: 1em
+    section#home
+
     section#listen
       ul
         +column(12)
@@ -136,7 +149,6 @@ body.three-col.bp
           padding: 0
           p
             margin: 0
-
     footer
       clear: both
       overflow: hidden
@@ -145,5 +157,29 @@ body.three-col.bp
       padding: 20px 0
       margin-bottom: 500px
 
-
-
+article
+  #slider
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+    li
+      margin: 0
+      padding: 0
+      list-style: none
+      width: 470px
+      height: 264px
+      overflow: hidden
+    width: 470px
+    height: 264px
+    overflow: hidden
+  ol#controls
+    +column(12)
+    list-style-type: none
+    margin: 0
+    padding-left: 0
+    overflow: hidden
+    clear: both
+    li
+      float: left
+      padding-right: 1em

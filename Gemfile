@@ -47,6 +47,8 @@ gem 'rails_admin_tag_list_field', :git => 'https://github.com/codeinvain/rails_a
 gem 'acts_as_tree'
 gem 'dalli'
 gem 'thin'
+gem 'rails_autolink'
+
 
 group :assets do
   gem 'sass-rails'
