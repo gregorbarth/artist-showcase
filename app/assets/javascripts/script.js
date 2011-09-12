@@ -20,6 +20,9 @@ $(document).ready(function() {
         return false
     });
 
-
+    $("footer a.about_asc_trigger").click(function() {
+        $("#about_asc").toggle();
+        return false
+    });
 
 });

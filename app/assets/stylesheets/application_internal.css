@@ -416,20 +416,33 @@ body.three-col.bp #container footer {
   padding: 20px 0;
   margin-bottom: 500px;
 }
+/* line 165, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container footer #about_asc {
+  padding-left: 160px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+  display: none;
+}
+/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.three-col.bp #container footer #about_asc {
+  overflow-x: hidden;
+}
 
-/* line 167, ../../stylesheets/application_internal.sass */
+/* line 172, ../../stylesheets/application_internal.sass */
 article #slider {
   width: 470px;
   height: 264px;
   overflow: hidden;
 }
-/* line 168, ../../stylesheets/application_internal.sass */
+/* line 173, ../../stylesheets/application_internal.sass */
 article #slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 172, ../../stylesheets/application_internal.sass */
+/* line 177, ../../stylesheets/application_internal.sass */
 article #slider li {
   margin: 0;
   padding: 0;
@@ -438,7 +451,7 @@ article #slider li {
   height: 264px;
   overflow: hidden;
 }
-/* line 182, ../../stylesheets/application_internal.sass */
+/* line 187, ../../stylesheets/application_internal.sass */
 article ol#controls {
   display: inline;
   float: left;
@@ -454,13 +467,13 @@ article ol#controls {
 * html article ol#controls {
   overflow-x: hidden;
 }
-/* line 189, ../../stylesheets/application_internal.sass */
+/* line 194, ../../stylesheets/application_internal.sass */
 article ol#controls li {
   float: left;
   padding-right: 1em;
 }
 
-/* line 195, ../../stylesheets/application_internal.sass */
+/* line 200, ../../stylesheets/application_internal.sass */
 section#listen article li {
   display: none;
 }

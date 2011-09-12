@@ -55,7 +55,9 @@
           = link_to(image_tag("sb/youtube_16.png"), "/")
       = yield
       %footer
-        &copy; Cenatus CIC &amp; Give Up Art
+        &copy; Content by #{CenatusCms::Application::SITE_NAME} | Site powered by #{link_to "Artist Showcase", "#", :class => "about_asc_trigger"} built by #{link_to "Cenatus CIC", "http://cenatus.org/"} &amp; #{link_to "Give Up Art", "http://www.giveupart.com/"}
+        #about_asc
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ligula eu nunc iaculis imperdiet. Nulla porttitor, lacus ac pretium ornare, neque neque volutpat dolor, nec elementum augue nibh vitae turpis. Vestibulum sagittis egestas bibendum. Quisque ultricies molestie tempor. Mauris in ante ante, ac vulputate sem. Curabitur at lorem id velit pulvinar pulvinar. Pellentesque purus nisl, pellentesque quis viverra at, pulvinar at nunc. Nunc quis orci nisi. Cras mattis luctus nunc eget sagittis.
         -##grid_debug{:style => "float:right"}
         -#  %a#show_grid
         -#    Show Grid
