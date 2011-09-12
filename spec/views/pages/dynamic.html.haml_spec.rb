@@ -26,16 +26,17 @@ describe "pages/dynamic.html.haml" do
 
 
   end
-
+  #
   #describe "populated render" do
   #  before(:each) do
   #
-  #    @asset = Asset.new(:name => "asset1")
+  #    @asset_one = Asset.new(:name => "asset1")
+  #    @section_one = Page.new(:name => "Home")
+  #    Page.stub(:assets).and_return([@section_one])
   #
-  #    @section_one = Page.new(:name => "Landing", :assets => [@asset])
   #    #@project_two = Project.new(:title => "project two", :categories => [@cat])
   #
-  #    assign(:landing_section, [@section_one])
+  #    assign(:home_section, [@section_one])
   #    #assign(:featured_projects, [@project_two])
   #
   #
@@ -51,7 +52,7 @@ describe "pages/dynamic.html.haml" do
   #
   #    #rendered.should have_selector("div.exhibitions", :count => 2)
   #    #
-  #    rendered.should =~ /<h1>/
+  #    rendered.should =~ /<h2>/
   #    #rendered.should =~ /<h2>project one<\/h2>/
   #    #rendered.should have_content("project one")
   #    #

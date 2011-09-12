@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('nav').onePageNav({
-        currentClass: 'current',
+    $("nav").onePageNav({
+        currentClass: "current",
         changeHash: true,
         scrollSpeed: 750
     });
@@ -10,5 +10,16 @@ $(document).ready(function() {
 		continuous: true,
 		numeric: true
 	});
+
+    $("#listen article ul li").first().show();
+
+    $("#listen aside ul li a").click(function() {
+        var articles = $("#listen article ul li");
+        articles.hide("slow");
+        articles.filter("."+$(this).attr("class")).show("slow");
+        return false
+    });
+
+
 
 });

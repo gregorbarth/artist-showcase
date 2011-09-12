@@ -32,6 +32,10 @@ body.three-col.bp
   h1, h2, h3, h4, h5, h6
     +header-text
     //font-family: 'Podkova', Georgia, serif
+    a:link, a:visited, a:active, a:hover
+      text-decoration: none
+      font-weight: normal
+      color: black
   h1, h2
     font-size: 1.5em
     margin-top: 1em
@@ -100,6 +104,8 @@ body.three-col.bp
         overflow: hidden
         border-top: 2px solid black
         padding-top: 18px
+        article
+          padding-bottom: 1px
         aside
           ul
             +no-bullets
@@ -183,3 +189,8 @@ article
     li
       float: left
       padding-right: 1em
+
+section#listen
+  article
+    li
+      display: none

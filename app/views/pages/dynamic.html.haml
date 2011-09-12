@@ -9,9 +9,6 @@
             - for asset in @home_section.assets do
               %li
                 = image_tag(asset.asset.url(:original), :alt => asset.description)
-
-
-
         - for content_area in @home_section.content_areas do
           %h2= content_area.name
           :textile
@@ -19,7 +16,9 @@
       %aside
         %ul
           %li
-            %h4= "Twitter"
+            %h4
+              = "Twitter - "
+              <a href="http://twitter.com/#{CenatusCms::Application::TWITTER_NAME}" title="#{CenatusCms::Application::TWITTER_NAME}">follow me</a>
             %ul#twitter_update_list
               - if @tweets.present?
                 - for tweet in @tweets do
@@ -30,6 +29,7 @@
                 %li
                   %span
                     Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
+
           %li
             %h4= "Newsletter Subscribe"
             %form{:action => CenatusCms::Application::MAILER_URL, :method => "post"}
@@ -52,20 +52,15 @@
         %h1= "Listen"
       %article
         %ul
-          - for content_area in @listen_section.content_areas do
-            %li
-              :textile
-                #{content_area.content}
+          - for content_area in @listen_section.content_areas.order("sort_order") do
+            %li{:class => content_area.name.gsub(/[^0-9A-Za-z]/, "")}
+              = content_area.content.html_safe
       %aside
         %ul
-          %li
-            %h4= "YouTube channel"
-          %li
-            %h4= "MixCloud"
-          %li
-            %h4= "SoundCloud"
-          %li
-            %h4= "other"
+          - for content_area in @listen_section.content_areas.order("sort_order") do
+            %li
+              %h4
+                = link_to "#{content_area.name}", "#", :class => content_area.name.gsub(/[^0-9A-Za-z]/, "")
 %section#biography
   - if @biography_section.present?
     .wrapper
