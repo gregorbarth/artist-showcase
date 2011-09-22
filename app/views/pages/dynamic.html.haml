@@ -29,22 +29,22 @@
                 %li
                   %span
                     Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
-
-          %li
-            %h4= "Newsletter Subscribe"
-            %form{:action => CenatusCms::Application::MAILER_URL, :method => "post"}
-              %div
-                %input#signup_first_name{:name => "signup[first_name]", :type => "text", :value => "First Name"}
-                %br
-                %input#signup_last_name{:name => "signup[last_name]", :type => "text", :value => "Last Name"}
-                %br
-                %input#signup_email{:name => "signup[email]", :type => "text", :value => "Email"}
-                %br
-                %input.button{:name => "commit", :type => "submit", :value => "Sign Up"}
           %li
             %h4= "Booking info"
           %li
             %h4= "Latest Tracks"
+          -#%li
+          -#  %h4= "Newsletter Subscribe"
+          -#  %form{:action => CenatusCms::Application::MAILER_URL, :method => "post"}
+          -#    %div
+          -#      %input#signup_first_name{:name => "signup[first_name]", :type => "text", :value => "First Name"}
+          -#      %br
+          -#      %input#signup_last_name{:name => "signup[last_name]", :type => "text", :value => "Last Name"}
+          -#      %br
+          -#      %input#signup_email{:name => "signup[email]", :type => "text", :value => "Email"}
+          -#      %br
+          -#      %input.button{:name => "commit", :type => "submit", :value => "Sign Up"}
+
 %section#listen
   - if @listen_section.present?
     .wrapper
