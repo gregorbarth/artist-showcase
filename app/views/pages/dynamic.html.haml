@@ -9,10 +9,15 @@
             - for asset in @home_section.assets do
               %li
                 = image_tag(asset.asset.url(:original), :alt => asset.description)
-        - for content_area in @home_section.content_areas do
-          %h2= content_area.name
+        - introduction = @home_section.content_areas.where(:name => :Introduction).last
+        - if introduction.present?
+          %h2= introduction.display_name
           :textile
-            #{content_area.content}
+            #{introduction.content}
+        -#- for content_area in @home_section.content_areas.where(:name => :Introduction).last do
+        -#  %h2= content_area.name
+        -#  :textile
+        -#    #{content_area.content}
       %aside
         %ul
           %li
@@ -29,21 +34,16 @@
                 %li
                   %span
                     Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
-          %li
-            %h4= "Booking info"
-          %li
-            %h4= "Latest Tracks"
-          -#%li
-          -#  %h4= "Newsletter Subscribe"
-          -#  %form{:action => CenatusCms::Application::MAILER_URL, :method => "post"}
-          -#    %div
-          -#      %input#signup_first_name{:name => "signup[first_name]", :type => "text", :value => "First Name"}
-          -#      %br
-          -#      %input#signup_last_name{:name => "signup[last_name]", :type => "text", :value => "Last Name"}
-          -#      %br
-          -#      %input#signup_email{:name => "signup[email]", :type => "text", :value => "Email"}
-          -#      %br
-          -#      %input.button{:name => "commit", :type => "submit", :value => "Sign Up"}
+          - sidebarone = @home_section.content_areas.where(:name => "Sidebar Area 1").last
+          - if sidebarone.content.present?
+            %li
+              %h4= sidebarone.display_name
+              = sidebarone.content.html_safe
+          - sidebartwo = @home_section.content_areas.where(:name => "Sidebar Area 2").last
+          - if sidebartwo.content.present?
+            %li
+              %h4= sidebartwo.display_name
+              = sidebartwo.content.html_safe
 
 %section#listen
   - if @listen_section.present?

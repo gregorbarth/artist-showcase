@@ -129,4 +129,53 @@ RailsAdmin.config do |config|
   end
 
 
+
+  ##############
+  # Content Area
+  ##############
+  config.model ContentArea do
+    list do
+      field :id
+      field :display_name
+      field :name
+      field :page
+      field :sort_order
+      field :content
+      field :created_at
+      field :updated_at
+
+    end
+
+    show do
+      field :id
+      field :display_name
+      field :name
+
+      field :page
+      field :sort_order
+      field :content do
+        formatted_value do
+          if value.blank?
+            "EMPTY"
+          else
+            textilize(value).html_safe
+          end
+        end
+      end
+      field :created_at
+      field :updated_at
+    end
+
+    edit do
+      field :display_name
+      field :name do
+        help 'WARNING: editing this field will affect on where the content is displayed on the page'
+      end
+      field :page
+      field :sort_order
+      field :content
+    end
+  end
+
+
 end

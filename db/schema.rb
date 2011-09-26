@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110824180743) do
+ActiveRecord::Schema.define(:version => 20110913180610) do
 
   create_table "assets", :force => true do |t|
     t.string   "name"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20110824180743) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "page_id"
+    t.string   "display_name"
   end
 
   create_table "pages", :force => true do |t|
@@ -67,7 +68,7 @@ ActiveRecord::Schema.define(:version => 20110824180743) do
     t.string   "username"
     t.integer  "item"
     t.string   "table"
-    t.integer  "month",      :limit => 2
+    t.integer  "month"
     t.integer  "year",       :limit => 8
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -93,8 +94,8 @@ ActiveRecord::Schema.define(:version => 20110824180743) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                                 :default => "", :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
+    t.string   "email",                                                :null => false
+    t.string   "encrypted_password",     :limit => 128,                :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

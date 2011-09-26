@@ -6,6 +6,7 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-Page.create(:name => 'Home', :slug => 'home', :sort_order => 0)
-
-
+phome = Page.create(:name => 'Home', :slug => 'home', :sort_order => 0)
+ContentArea.create(:name => 'Introduction', :page_id => phome.id)
+ContentArea.create(:name => 'Sidebar Area 1', :page_id => phome.id)
+ContentArea.create(:name => 'Sidebar Area 2', :page_id => phome.id)
