@@ -83,7 +83,7 @@
           = image_tag "span-12-wide.png"
           -#= image_tag(asset.asset.url(:original), :alt => asset.description)
         - for content_area in @biography_section.content_areas do
-          %h2= content_area.name
+          %h2= content_area.display_name
           :textile
             #{content_area.content}
         .addthis_toolbox.addthis_default_style
@@ -145,9 +145,9 @@
       %article
         %h2= "Contact Details"
         %ul
-          - for content_area in @contact_section.content_areas do
+          - for content_area in @contact_section.content_areas.order("sort_order") do
             %li
-              %h3= content_area.name
+              %h3= content_area.display_name
               :textile
                 #{content_area.content}
         .addthis_toolbox.addthis_default_style
