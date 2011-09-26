@@ -39,15 +39,15 @@
                   %span
                     Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
           - sidebarone = @home_section.content_areas.where(:name => "Sidebar Area 1").last
-          - if sidebarone.content.present?
+          - if sidebarone.present?
             %li
               %h4= sidebarone.display_name
-              = sidebarone.content.html_safe
+              = sidebarone.content.html_safe if sidebarone.content.present?
           - sidebartwo = @home_section.content_areas.where(:name => "Sidebar Area 2").last
-          - if sidebartwo.content.present?
+          - if sidebartwo.present?
             %li
               %h4= sidebartwo.display_name
-              = sidebartwo.content.html_safe
+              = sidebartwo.content.html_safe if sidebartwo.content.present?
 
 %section#listen
   - if @listen_section.present?
