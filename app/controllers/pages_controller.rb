@@ -10,6 +10,9 @@ class PagesController < ApplicationController
 
     twitter()
 
+    #discogs()
+    discogs()
+
     #
     #slug= params[:slug].blank? ? "home" : params[:slug]
     #

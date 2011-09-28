@@ -48,6 +48,9 @@ gem 'acts_as_tree'
 gem 'dalli'
 gem 'thin'
 gem 'rails_autolink'
+#gem "buntine-discogs", :git => "git://github.com/buntine/discogs.git"
+#gem "httparty", :git => "https://github.com/jnunemaker/httparty.git"
+gem 'httparty'
 
 
 group :assets do

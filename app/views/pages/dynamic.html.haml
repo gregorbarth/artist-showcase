@@ -97,9 +97,9 @@
       %aside
         %h4= "Discogs"
         %ul
-          %li= "item 1"
-          %li= "item 2"
-          %li= "item 3"
+          - for release in @releases do
+            %li= release["title"]
+
 %section#gigs
   - if @gigs_section.present?
     .wrapper
