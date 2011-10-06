@@ -9,8 +9,6 @@ class PagesController < ApplicationController
     @contact_section = Page.where(:name => :Contact).last
 
     twitter()
-
-    #discogs()
     discogs()
 
     #

@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/msp/discogs.git
+  revision: f8fd1fe5c4f2cd3aa2eacbd6c4d179bec4fb0414
+  specs:
+    discogs-wrapper (1.0.0)
+
+GIT
   remote: git://github.com/rails/rails.git
   revision: 5ed3e6a61f526eea39192a23cc87d9d750c0957a
   branch: 3-1-stable
@@ -164,9 +170,6 @@ GEM
       heroku (>= 2.0.0)
       thor (~> 0.14.0)
     hike (1.2.1)
-    httparty (0.8.0)
-      multi_json
-      multi_xml
     i18n (0.6.0)
     jquery-rails (1.0.13)
       railties (~> 3.0)
@@ -289,6 +292,7 @@ DEPENDENCIES
   cucumber-rails
   dalli
   devise
+  discogs-wrapper!
   friendly_id (~> 3.2.1)
   growl
   guard
@@ -296,7 +300,6 @@ DEPENDENCIES
   haml (>= 3.0.0)
   haml-rails
   heroku_plus
-  httparty
   jquery-rails
   mysql2
   paperclip!

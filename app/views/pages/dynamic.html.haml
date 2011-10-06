@@ -98,7 +98,11 @@
         %h4= "Discogs"
         %ul
           - for release in @releases do
-            %li= release["title"]
+            %li
+              = release.title
+              on
+              = release.label
+
 
 %section#gigs
   - if @gigs_section.present?
