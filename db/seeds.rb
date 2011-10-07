@@ -14,5 +14,7 @@ ContentArea.create(:name => 'Sidebar Area 2', :page_id => phome.id)
 Page.create(:name => 'Listen', :slug => 'listen', :sort_order => 0)
 Page.create(:name => 'Gigs', :slug => 'gigs', :sort_order => 0)
 Page.create(:name => 'Biography', :slug => 'biography', :sort_order => 0)
-Page.create(:name => 'Contact', :slug => 'contact', :sort_order => 0)
 
+pcontact = Page.create(:name => 'Contact', :slug => 'contact', :sort_order => 0)
+ContentArea.create(:name => 'Contact 1', :page_id => pcontact.id)
+ContentArea.create(:name => 'Contact 2', :page_id => pcontact.id)

@@ -57,7 +57,7 @@ module CenatusCms
 
     # CMS config
     # CenatusCms::Application::SITE_NAME
-    SITE_NAME = "Cenatus CMS"
+    SITE_NAME = "Artist Name"
     SITE_URL = "http://cenatus.org/"
     SITE_LOGO = "#{SITE_URL}images/home-logo.jpg"
     FB_ADMIN = "541838134"

@@ -25,9 +25,7 @@
       %aside
         %ul
           %li
-            %h4
-              = "Twitter - "
-              <a href="http://twitter.com/#{CenatusCms::Application::TWITTER_NAME}" title="#{CenatusCms::Application::TWITTER_NAME}">follow me</a>
+            %h4= link_to "Twitter", "http://twitter.com/#{CenatusCms::Application::TWITTER_NAME}"
             %ul#twitter_update_list
               - if @tweets.present?
                 - for tweet in @tweets do
@@ -79,11 +77,12 @@
       %h1="Biography"
     .wrapper
       %article
-        - for asset in @biography_section.assets do
-          = image_tag "span-12-wide.png"
-          -#= image_tag(asset.asset.url(:original), :alt => asset.description)
+        -#- for asset in  do
+          -#= image_tag "span-12-wide.png"
+        - biography_asset = @biography_section.assets.last
+        - if biography_asset.present?
+          = image_tag(asset.asset.url(:original), :alt => asset.description, :id => "biog_image")
         - for content_area in @biography_section.content_areas do
-          %h2= content_area.display_name
           :textile
             #{content_area.content}
         -#.addthis_toolbox.addthis_default_style
@@ -107,10 +106,10 @@
 %section#gigs
   - if @gigs_section.present?
     .left-col
-      %h1= "Gigs"
+      %h1= "Gigs / Schedule"
     .wrapper
       %article
-        %h2= "Upcoming gigs"
+        %h2= "Dec. 2012"
         %ul
           -#- for content_area in @gigs_section.content_areas do
           -#  %li
@@ -147,18 +146,23 @@
       %h1= "Contact"
     .wrapper
       %article
-        %h2= "Contact Details"
         %ul
-          - for content_area in @contact_section.content_areas.order("sort_order") do
+          - contactone = @contact_section.content_areas.where(:name => "Contact 1").last
+          - if contactone.present?
             %li
-              %h3= content_area.display_name
+              %h2= contactone.display_name
               :textile
-                #{content_area.content}
+                #{contactone.content}
+          - contacttwo = @contact_section.content_areas.where(:name => "Contact 2").last
+          - if contacttwo.present?
+            %li
+              %h2= contacttwo.display_name
+              :textile
+                #{contacttwo.content}
         -#.addthis_toolbox.addthis_default_style
         -#  %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
         -#  %a.addthis_button_tweet
         -#  %a.addthis_button_google_plusone{"g:plusone:size" => "medium"}
         -#  %a.addthis_counter.addthis_pill_style
         -#%script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e78b281298ffad1", :type => "text/javascript"}
-
       %aside
