@@ -34,6 +34,14 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def songkick
+    require 'songkickr'
+    begin
+      remote = Songkickr::Remote.new CenatusCms::Application::SONGKICK_API
+      @results = remote.events(:artist_name => CenatusCms::Application::SONGKICK_ARTIST_NAME)
+      puts @results
+    end
+  end
 
   #### for use with HTTParty    ####
   #

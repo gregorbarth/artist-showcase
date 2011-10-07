@@ -49,8 +49,8 @@ gem 'dalli'
 gem 'thin'
 gem 'rails_autolink'
 gem 'discogs-wrapper', :git => 'git://github.com/msp/discogs.git'
-#gem 'httparty'
-
+gem 'httparty'
+gem 'songkickr', :git => 'git://github.com/jrmehle/songkickr.git'
 
 group :assets do
   gem 'sass-rails'

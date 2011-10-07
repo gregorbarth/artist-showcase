@@ -64,5 +64,7 @@ module CenatusCms
     TWITTER_NAME = "mattspendlove"
     MAILER_URL = "https://madmimi.com/signups/subscribe/27129"
     DISCOGS_NAME = "Spatial+%282%29"
+    SONGKICK_API = "Yu4MfPKXOImts5HG"
+    SONGKICK_ARTIST_NAME = 'XXXY'
   end
 end
