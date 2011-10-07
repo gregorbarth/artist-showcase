@@ -5,8 +5,9 @@
   :text-decoration none
 
 // our constants
-$dark_blue: #3d66ac
-$sky_blue:  #90b3df
+$dark_grey: #585858
+$light_grey: #878787
+$orange:  #ff4500
 
 //@font-face {
 //  font-family: AS_header_font;
@@ -18,29 +19,38 @@ $sky_blue:  #90b3df
 // FONTS and LINK STYLES
 
 
-
 body.three-col.bp
-  color: #999
-  //font-family: Verdana, Geneva, sans-serif
+  background: #f9f9f9 url("grey_nav.png") repeat top right
+
+  color: $dark_grey
+  font-family: "Monosten E", Courier, monospace
+  font-size-adjust: 0.5
+  font-weight: 200
+  font-style: normal
+  font-size: 12px
+  line-height: 1.2em
   a
     text-decoration: underline
-    +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
+    +link-colors($light_grey, $orange, $orange, $light_grey, $orange)
+    font-weight: 400
   ul
     +no-bullets
     padding-left: 0
     margin: 0
   h1, h2, h3, h4, h5, h6
     +header-text
-    //font-family: 'Podkova', Georgia, serif
+    font-size: 1em
+    font-family: "Monosten C", Courier, monospace
+    font-size-adjust: 0.5
+    font-weight: 400
+    font-style: normal
     a:link, a:visited, a:active, a:hover
       text-decoration: none
-      font-weight: normal
-      color: black
-  h1, h2
-    font-size: 1.5em
+      font-weight: 400
+      color: $dark_grey
+  h2, h4
     margin-top: 1em
   h3
-    font-size: 1.2em
     border-top: 1px solid black
     padding-top: 0.3em
     margin-bottom: 0.5em
@@ -51,33 +61,34 @@ body.three-col.bp
       position: fixed
       //width: 100%
       z-index: 1000
-      background: url("white_nav.png") repeat-x scroll 0 0 transparent
+      background: url("grey_nav.png") repeat-x scroll 0 0 transparent
       height: 90px
       .logo
-        font-size: 1.5em
-        font-color: black
-        background: url(span-4-rows-4.png) top left no-repeat
+        //background: url(span-4-rows-4.png) top left no-repeat
         vertical-align: baseline
         height: 72px
       nav
         float: left
         ul
           li
-            font-size: 1.1em
-            a:link, a:visited, a:active, a:hover
+            a:link, a:visited
               text-decoration: none
               font-weight: normal
-              color: black
+              color: $dark_grey
+              line-height: 1.5em
 
+            a:active, a:hover
+              border-bottom: 1px solid $dark_grey
 
 
 // STRUCTURE
 body.three-col.bp
   #container
+    margin: 0 10px 0 10px
     header
-
       .logo
-        +column(4)
+        +column(2)
+        line-height: 1.5em
       nav
         ul
           +horizontal-list-container
@@ -85,24 +96,30 @@ body.three-col.bp
           margin: 0
           li
             +horizontal-list-item
-            +column(2)
+            +column(1)
             padding: 0px
           li.contact
-            +column(6)
-      .socialbookmarks
-        +column(2)
-        +inline-list
-        white-space: normal
-        float: left
+            +column(3)
+          li.follow
+            +column(3)
+            margin-right: 0
+            line-height: 1.5em
+            .socialbookmarks
+              clear: both
+              +inline-list
+              white-space: normal
+              float: left
     h2
       margin-top: 90px
     section
+      clear: both
+      overflow: hidden
       padding-top: 90px
-      .wrapper
-        clear: both
+      .left-col, .wrapper
+        //clear: both
         overflow: hidden
-        border-top: 2px solid black
-        padding-top: 18px
+        border-top: 1px solid black
+        padding-top: 19px
         article
           padding-bottom: 1px
           .addthis_toolbox
@@ -125,7 +142,7 @@ body.three-col.bp
 
       //section#home, section#biography
       p, h2
-        +column(10)
+        +column(5)
       h2
         margin-top: 1em
 
@@ -133,7 +150,7 @@ body.three-col.bp
 
     section#listen
       ul
-        +column(12)
+        +column(6)
     section#gigs
       ul li
         clear: both
@@ -141,20 +158,20 @@ body.three-col.bp
         border-top: 1px solid black
         padding: 0 0 10px 0
         date
-          +column(4)
+          +column(2)
           float: left
         p
-          +column(6)
+          +column(3)
           float: left
           margin: 0
         p:last-child
-          +column(4)
+          +column(2)
     section#contact
       ul
-        +column(14)
+        +column(7)
         +horizontal-list
         li
-          +column(4)
+          +column(2)
           padding: 0
           p
             margin: 0
@@ -166,8 +183,8 @@ body.three-col.bp
       padding: 20px 0
       margin-bottom: 500px
       #about_asc
-        +prepend(4)
-        +column(12)
+        +prepend(2)
+        +column(6)
         display: none
 
 
@@ -188,7 +205,7 @@ article
     height: 264px
     overflow: hidden
   ol#controls
-    +column(12)
+    +column(6)
     list-style-type: none
     margin: 0
     padding-left: 0

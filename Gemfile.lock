@@ -1,14 +1,14 @@
 GIT
-  remote: git://github.com/jrmehle/songkickr.git
-  revision: 03a88cdab098a0469e121afb6e76075c42d437d9
-  specs:
-    songkickr (0.2.0)
-
-GIT
   remote: git://github.com/msp/discogs.git
   revision: f8fd1fe5c4f2cd3aa2eacbd6c4d179bec4fb0414
   specs:
     discogs-wrapper (1.0.0)
+
+GIT
+  remote: git://github.com/msp/songkickr.git
+  revision: 03a88cdab098a0469e121afb6e76075c42d437d9
+  specs:
+    songkickr (0.2.0)
 
 GIT
   remote: git://github.com/rails/rails.git
