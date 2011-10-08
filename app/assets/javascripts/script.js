@@ -66,11 +66,11 @@ $(document).ready(function() {
         changeHash: true,
         scrollSpeed: 750
     });
+//    console.log("ANDI")
 
 	$("#slider").easySlider({
 		auto: true,
-		continuous: true,
-		numeric: true
+		continuous: true
 	});
 
     $("#listen article ul li").first().show();

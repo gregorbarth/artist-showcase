@@ -66,7 +66,7 @@ body.three-col.bp
       //width: 100%
       z-index: 1000
       background: url("grey_nav.png") repeat-x scroll 0 0 transparent
-      height: 90px
+      height: 72px
       .logo
         //background: url(span-4-rows-4.png) top left no-repeat
         vertical-align: baseline
@@ -82,14 +82,14 @@ body.three-col.bp
               line-height: 1.5em
             a:active, a:hover
               border-bottom: 1px solid $dark_grey
-            .socialbookmarks
-              a:link, a:visited
-                text-decoration: none
-                font-weight: normal
-                color: $dark_grey
-                line-height: 1.5em
-              a:active, a:hover
-                border-bottom: 0
+      .socialbookmarks
+        a:link, a:visited
+          text-decoration: none
+          font-weight: normal
+          color: $dark_grey
+          line-height: 1.5em
+        a:active, a:hover
+          border-bottom: 0
 
 
 // STRUCTURE
@@ -111,15 +111,15 @@ body.three-col.bp
             padding: 0px
           li.contact
             +column(3)
-          li.follow
-            +column(3)
-            margin-right: 0
-            line-height: 1.5em
-            .socialbookmarks
-              clear: both
-              +inline-list
-              white-space: normal
-              float: left
+      .follow
+        +column(3)
+        margin-right: 0
+        line-height: 1.5em
+        .socialbookmarks
+          clear: both
+          +inline-list
+          white-space: normal
+          float: left
     section
       clear: both
       overflow: hidden
@@ -194,7 +194,6 @@ body.three-col.bp
           +column(2)
     section#contact
       ul
-        //+column(6)
         +horizontal-list
         li
           +column(3)
@@ -204,7 +203,6 @@ body.three-col.bp
           p
             margin: 0 0 0.4em
     footer
-      //+prepend(2)
       margin-left: 160px
       +column(10)
       clear: both
@@ -215,7 +213,6 @@ body.three-col.bp
       margin-bottom: 500px
       font-size: 0.75em
       #about_asc
-        //+prepend(2)
         +column(6)
         display: none
 
@@ -237,15 +234,27 @@ article
     height: 320px
     overflow: hidden
     margin-bottom: 25px
-  ol#controls
-    +column(6)
-    list-style-type: none
-    margin: 0
-    padding-left: 0
-    overflow: hidden
-    clear: both
-    li
-      float: left
-      padding-right: 1em
+
+
+  #prevBtn, #nextBtn
+    width: 6px
+    height: 11px
+    position: relative
+    left: 38px
+    top: -20px
+    a:link, a:visited, a:active, a:hover
+      text-decoration: none
+  #prevBtn
+    background: url(Arrow_Left.png) top left no-repeat
+  #nextBtn
+    background: url(Arrow_Right.png) top left no-repeat
+
+
+    //list-style-type: none
+    //margin: 0
+    //padding-left: 0
+    //overflow: hidden
+    //clear: both
+
 
 

@@ -148,7 +148,7 @@ body.three-col.bp #container header {
   position: fixed;
   z-index: 1000;
   background: url("grey_nav.png") repeat-x scroll 0 0 transparent;
-  height: 90px;
+  height: 72px;
 }
 /* line 70, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .logo {
@@ -171,14 +171,14 @@ body.three-col.bp #container header nav ul li a:active, body.three-col.bp #conta
   border-bottom: 1px solid #585858;
 }
 /* line 86, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li .socialbookmarks a:link, body.three-col.bp #container header nav ul li .socialbookmarks a:visited {
+body.three-col.bp #container header .socialbookmarks a:link, body.three-col.bp #container header .socialbookmarks a:visited {
   text-decoration: none;
   font-weight: normal;
   color: #585858;
   line-height: 1.5em;
 }
 /* line 91, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li .socialbookmarks a:active, body.three-col.bp #container header nav ul li .socialbookmarks a:hover {
+body.three-col.bp #container header .socialbookmarks a:active, body.three-col.bp #container header .socialbookmarks a:hover {
   border-bottom: 0;
 }
 
@@ -252,7 +252,7 @@ body.three-col.bp #container header nav ul li.contact {
   overflow-x: hidden;
 }
 /* line 114, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li.follow {
+body.three-col.bp #container header .follow {
   display: inline;
   float: left;
   margin-right: 20px;
@@ -261,18 +261,18 @@ body.three-col.bp #container header nav ul li.follow {
   line-height: 1.5em;
 }
 /* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container header nav ul li.follow {
+* html body.three-col.bp #container header .follow {
   overflow-x: hidden;
 }
 /* line 118, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li.follow .socialbookmarks {
+body.three-col.bp #container header .follow .socialbookmarks {
   clear: both;
   list-style-type: none;
   white-space: normal;
   float: left;
 }
 /* line 5, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
-body.three-col.bp #container header nav ul li.follow .socialbookmarks, body.three-col.bp #container header nav ul li.follow .socialbookmarks li {
+body.three-col.bp #container header .follow .socialbookmarks, body.three-col.bp #container header .follow .socialbookmarks li {
   margin: 0px;
   padding: 0px;
   display: inline;
@@ -452,7 +452,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 199, ../../stylesheets/application_internal.sass */
+/* line 198, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   display: inline;
   float: left;
@@ -464,15 +464,15 @@ body.three-col.bp #container section#contact ul li {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 202, ../../stylesheets/application_internal.sass */
+/* line 201, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li h2 {
   margin-bottom: 0.4em;
 }
-/* line 204, ../../stylesheets/application_internal.sass */
+/* line 203, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0 0 0.4em;
 }
-/* line 206, ../../stylesheets/application_internal.sass */
+/* line 205, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   margin-left: 160px;
   display: inline;
@@ -483,7 +483,7 @@ body.three-col.bp #container footer {
   overflow: hidden;
   margin-top: 90px;
   border-top: 1px solid #585858;
-  padding: 10px 0;
+  padding: 0;
   margin-bottom: 500px;
   font-size: 0.75em;
 }
@@ -491,7 +491,7 @@ body.three-col.bp #container footer {
 * html body.three-col.bp #container footer {
   overflow-x: hidden;
 }
-/* line 217, ../../stylesheets/application_internal.sass */
+/* line 215, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer #about_asc {
   display: inline;
   float: left;
@@ -504,20 +504,20 @@ body.three-col.bp #container footer #about_asc {
   overflow-x: hidden;
 }
 
-/* line 224, ../../stylesheets/application_internal.sass */
+/* line 221, ../../stylesheets/application_internal.sass */
 article #slider {
   width: 460px;
   height: 320px;
   overflow: hidden;
   margin-bottom: 25px;
 }
-/* line 225, ../../stylesheets/application_internal.sass */
+/* line 222, ../../stylesheets/application_internal.sass */
 article #slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 229, ../../stylesheets/application_internal.sass */
+/* line 226, ../../stylesheets/application_internal.sass */
 article #slider li {
   margin: 0;
   padding: 0;
@@ -526,24 +526,23 @@ article #slider li {
   height: 320px;
   overflow: hidden;
 }
-/* line 240, ../../stylesheets/application_internal.sass */
-article ol#controls {
-  display: inline;
-  float: left;
-  margin-right: 20px;
-  width: 460px;
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-  overflow: hidden;
-  clear: both;
+/* line 239, ../../stylesheets/application_internal.sass */
+article #prevBtn, article #nextBtn {
+  width: 6px;
+  height: 11px;
+  position: relative;
+  left: 38px;
+  top: -20px;
 }
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html article ol#controls {
-  overflow-x: hidden;
+/* line 245, ../../stylesheets/application_internal.sass */
+article #prevBtn a:link, article #prevBtn a:visited, article #prevBtn a:active, article #prevBtn a:hover, article #nextBtn a:link, article #nextBtn a:visited, article #nextBtn a:active, article #nextBtn a:hover {
+  text-decoration: none;
 }
 /* line 247, ../../stylesheets/application_internal.sass */
-article ol#controls li {
-  float: left;
-  padding-right: 1em;
+article #prevBtn {
+  background: url(Arrow_Left.png) top left no-repeat;
+}
+/* line 249, ../../stylesheets/application_internal.sass */
+article #nextBtn {
+  background: url(Arrow_Right.png) top left no-repeat;
 }
