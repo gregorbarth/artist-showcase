@@ -11,7 +11,8 @@
                 = image_tag(asset.asset.url(:original), :alt => asset.description)
         - introduction = @home_section.content_areas.where(:name => :Introduction).last
         - if introduction.present?
-          %h2= introduction.display_name
+          - if introduction.display_name.present?
+            %h2= introduction.display_name
           :textile
             #{introduction.content}
 
@@ -70,7 +71,7 @@
           - for content_area in @listen_section.content_areas.order("sort_order") do
             %li
               %h4
-                = link_to "#{content_area.name}", "#", :class => content_area.name.gsub(/[^0-9A-Za-z]/, "")
+                = link_to "#{content_area.display_name}", "#", :class => content_area.name.gsub(/[^0-9A-Za-z]/, "")
 %section#biography
   - if @biography_section.present?
     .left-col

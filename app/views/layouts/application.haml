@@ -20,7 +20,11 @@
     = javascript_include_tag :application
 
     -#%link{:href => "http://fonts.googleapis.com/css?family=Podkova", :rel => "stylesheet", :type => "text/css"}
-    %link{:rel => "stylesheet", :href => "http://f.fontdeck.com/s/css/dOPyi7aFSwfbRlW7uGCiUhIMqCE/localhost/11846.css", :type => "text/css"}
+    - if request.host == "localhost"
+      %link{:rel => "stylesheet", :href => "http://f.fontdeck.com/s/css/0YqsPiW6g63C2r0wLfl2RFAC0Vc/localhost/11846.css", :type => "text/css"}
+    - else
+      %link{:rel => "stylesheet", :href => "http://f.fontdeck.com/s/css/0YqsPiW6g63C2r0wLfl2RFAC0Vc/artist-showcase.heroku.com/11846.css", :type => "text/css"}
+
 
     -#:javascript
     -#  jQuery(function($){
