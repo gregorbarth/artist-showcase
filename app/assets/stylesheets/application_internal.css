@@ -338,6 +338,7 @@ body.three-col.bp #container section .left-col aside ul li:first-of-type, body.t
 /* line 163, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen article li {
   width: 460px;
+  display: none;
 }
 /* line 167, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen aside li {
@@ -498,7 +499,7 @@ article #slider {
   width: 460px;
   height: 320px;
   overflow: hidden;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 /* line 226, ../../stylesheets/application_internal.sass */
 article #slider ul {
@@ -521,7 +522,7 @@ article #prevBtn, article #nextBtn {
   height: 11px;
   position: relative;
   left: 438px;
-  top: -20px;
+  top: -5px;
 }
 /* line 247, ../../stylesheets/application_internal.sass */
 article #prevBtn a:link, article #prevBtn a:visited, article #prevBtn a:active, article #prevBtn a:hover, article #nextBtn a:link, article #nextBtn a:visited, article #nextBtn a:active, article #nextBtn a:hover {
