@@ -9,12 +9,13 @@
             - for asset in @home_section.assets do
               %li
                 = image_tag(asset.asset.url(:original), :alt => asset.description)
-        - introduction = @home_section.content_areas.where(:name => :Introduction).last
-        - if introduction.present?
-          - if introduction.display_name.present?
-            %h2= introduction.display_name
-          :textile
-            #{introduction.content}
+        .fivecol_content
+          - introduction = @home_section.content_areas.where(:name => :Introduction).last
+          - if introduction.present?
+            - if introduction.display_name.present?
+              %h2= introduction.display_name
+            :textile
+              #{introduction.content}
 
         .addthis_toolbox.addthis_default_style
           %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
@@ -58,14 +59,6 @@
           - for content_area in @listen_section.content_areas.order("sort_order") do
             %li{:class => content_area.name.gsub(/[^0-9A-Za-z]/, "")}
               = content_area.content.html_safe
-        -#.addthis_toolbox.addthis_default_style
-        -#  %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
-        -#  %a.addthis_button_tweet
-        -#  %a.addthis_button_google_plusone{"g:plusone:size" => "medium"}
-        -#  %a.addthis_counter.addthis_pill_style
-        -#%script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e78b281298ffad1", :type => "text/javascript"}
-
-
       %aside
         %ul
           - for content_area in @listen_section.content_areas.order("sort_order") do
@@ -83,15 +76,16 @@
         - biography_asset = @biography_section.assets.last
         - if biography_asset.present?
           = image_tag(asset.asset.url(:original), :alt => asset.description, :id => "biog_image")
-        - for content_area in @biography_section.content_areas do
-          :textile
-            #{content_area.content}
-        -#.addthis_toolbox.addthis_default_style
-        -#  %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
-        -#  %a.addthis_button_tweet
-        -#  %a.addthis_button_google_plusone{"g:plusone:size" => "medium"}
-        -#  %a.addthis_counter.addthis_pill_style
-        -#%script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e78b281298ffad1", :type => "text/javascript"}
+        .fivecol_content
+          - for content_area in @biography_section.content_areas do
+            :textile
+              #{content_area.content}
+          -#.addthis_toolbox.addthis_default_style
+          -#  %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
+          -#  %a.addthis_button_tweet
+          -#  %a.addthis_button_google_plusone{"g:plusone:size" => "medium"}
+          -#  %a.addthis_counter.addthis_pill_style
+          -#%script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e78b281298ffad1", :type => "text/javascript"}
 
 
       %aside

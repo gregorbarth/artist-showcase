@@ -58,6 +58,7 @@ body.three-col.bp
     margin-bottom: 0.5em
   h4
     margin-bottom: 0.5em
+
   //  HEADER styling
   #container
     header
@@ -112,8 +113,7 @@ body.three-col.bp
           li.contact
             +column(3)
       .follow
-        +column(3)
-        margin-right: 0
+        +column(3, true)
         line-height: 1.5em
         .socialbookmarks
           clear: both
@@ -131,11 +131,13 @@ body.three-col.bp
         padding-top: 19px
         article
           padding-bottom: 1px
+          .fivecol_content
+            +span(5)
+            //clear: both
+            //display: block
+            //float: none
           .addthis_toolbox
-            clear: both
             margin-top: 20px
-          p, h2
-            +column(5)
         aside
           ul
             +no-bullets
@@ -158,16 +160,16 @@ body.three-col.bp
 
     section#listen
       article
-        ul
-          +column(6)
-          li
-            display: none
+        li
+          +span(6)
+          //display: none
       aside
-        ul li
+        li
           padding: 3px 0 12px 0
     section#biography
       #biog_image
         margin-bottom: 25px
+        +span(6)
       aside
         ul
           li
@@ -184,27 +186,29 @@ body.three-col.bp
         border-top: 1px dotted $dark_grey
         padding: 2px 0 10px 0
         date
-          +column(2)
+          +column(1)
           float: left
         p
           +column(3)
           float: left
           margin: 0
-        p:last-child
+        p:last-of-type
           +column(2)
     section#contact
       ul
         +horizontal-list
         li
+          +horizontal-list-item
           +column(3)
           padding: 0
           h2
             margin-bottom: 0.4em
           p
             margin: 0 0 0.4em
+        li:last-of-type
+          +last
+
     footer
-      margin-left: 160px
-      +column(10)
       clear: both
       overflow: hidden
       margin-top: 90px
@@ -213,7 +217,7 @@ body.three-col.bp
       margin-bottom: 500px
       font-size: 0.75em
       #about_asc
-        +column(6)
+        +span(6)
         display: none
 
 
@@ -234,13 +238,11 @@ article
     height: 320px
     overflow: hidden
     margin-bottom: 25px
-
-
   #prevBtn, #nextBtn
     width: 6px
     height: 11px
     position: relative
-    left: 38px
+    left: 438px
     top: -20px
     a:link, a:visited, a:active, a:hover
       text-decoration: none
