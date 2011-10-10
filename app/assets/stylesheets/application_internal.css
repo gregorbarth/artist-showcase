@@ -243,30 +243,34 @@ body.three-col.bp #container header .wrapper .follow .socialbookmarks, body.thre
   display: inline;
 }
 /* line 110, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .wrapper .follow .addthis_toolbox {
+  clear: both;
+}
+/* line 112, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section {
   clear: both;
   overflow: hidden;
   padding-top: 90px;
 }
-/* line 114, ../../stylesheets/application_internal.sass */
+/* line 116, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col, body.three-col.bp #container section .wrapper {
   overflow: hidden;
   border-top: 1px solid #878787;
   padding-top: 19px;
 }
-/* line 118, ../../stylesheets/application_internal.sass */
+/* line 120, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article, body.three-col.bp #container section .wrapper article {
   padding-bottom: 1px;
 }
-/* line 120, ../../stylesheets/application_internal.sass */
+/* line 122, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article .fivecol_content, body.three-col.bp #container section .wrapper article .fivecol_content {
   width: 380px;
 }
-/* line 122, ../../stylesheets/application_internal.sass */
+/* line 124, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article .addthis_toolbox, body.three-col.bp #container section .wrapper article .addthis_toolbox {
   margin-top: 20px;
 }
-/* line 125, ../../stylesheets/application_internal.sass */
+/* line 127, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul, body.three-col.bp #container section .wrapper aside ul {
   list-style: none;
   padding-left: 0;
@@ -278,100 +282,100 @@ body.three-col.bp #container section .left-col aside ul li, body.three-col.bp #c
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 129, ../../stylesheets/application_internal.sass */
+/* line 131, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li, body.three-col.bp #container section .wrapper aside ul li {
   border-top: 1px solid #878787;
   padding: 3px 0 20px 0;
 }
-/* line 132, ../../stylesheets/application_internal.sass */
+/* line 134, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li li, body.three-col.bp #container section .wrapper aside ul li li {
   border-top: 0;
   padding: 0 0 6px 0;
 }
-/* line 135, ../../stylesheets/application_internal.sass */
+/* line 137, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li li:last-of-type, body.three-col.bp #container section .wrapper aside ul li li:last-of-type {
   padding: 0;
 }
-/* line 137, ../../stylesheets/application_internal.sass */
+/* line 139, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li input, body.three-col.bp #container section .wrapper aside ul li input {
   margin: 5px 0;
 }
-/* line 139, ../../stylesheets/application_internal.sass */
+/* line 141, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li:first-of-type, body.three-col.bp #container section .wrapper aside ul li:first-of-type {
   border-top: 0;
   padding-top: 0;
 }
-/* line 142, ../../stylesheets/application_internal.sass */
+/* line 144, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen {
   margin-top: -30px;
 }
-/* line 145, ../../stylesheets/application_internal.sass */
+/* line 147, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen article li {
   width: 460px;
   display: none;
 }
-/* line 149, ../../stylesheets/application_internal.sass */
+/* line 151, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen aside li {
   padding: 3px 0 12px 0;
 }
-/* line 151, ../../stylesheets/application_internal.sass */
+/* line 153, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography {
   margin-top: -30px;
 }
-/* line 153, ../../stylesheets/application_internal.sass */
+/* line 155, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography #biog_image {
   margin-bottom: 25px;
   width: 460px;
 }
-/* line 158, ../../stylesheets/application_internal.sass */
+/* line 160, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li {
   padding: 2px 0 10px 0;
   border-top: 1px dotted #585858;
 }
-/* line 161, ../../stylesheets/application_internal.sass */
+/* line 163, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li:first-of-type {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
   margin-top: 10px;
 }
-/* line 165, ../../stylesheets/application_internal.sass */
+/* line 167, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs {
   margin-top: -30px;
 }
-/* line 167, ../../stylesheets/application_internal.sass */
+/* line 169, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table {
   margin-bottom: 0;
 }
-/* line 169, ../../stylesheets/application_internal.sass */
+/* line 171, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
 }
-/* line 172, ../../stylesheets/application_internal.sass */
+/* line 174, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td {
   padding: 2px 0 8px 0;
 }
-/* line 174, ../../stylesheets/application_internal.sass */
+/* line 176, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.location {
   width: 220px;
 }
-/* line 176, ../../stylesheets/application_internal.sass */
+/* line 178, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.date {
   width: 60px;
 }
-/* line 178, ../../stylesheets/application_internal.sass */
+/* line 180, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.city {
   width: 140px;
 }
-/* line 180, ../../stylesheets/application_internal.sass */
+/* line 182, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs h2 {
   margin: 0;
 }
-/* line 182, ../../stylesheets/application_internal.sass */
+/* line 184, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact {
   margin-top: -30px;
 }
-/* line 184, ../../stylesheets/application_internal.sass */
+/* line 186, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul {
   margin: 0;
   padding: 0;
@@ -402,7 +406,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 186, ../../stylesheets/application_internal.sass */
+/* line 188, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   list-style-image: none;
   list-style-type: none;
@@ -434,19 +438,19 @@ body.three-col.bp #container section#contact ul li.last {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 190, ../../stylesheets/application_internal.sass */
+/* line 192, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li h2 {
   margin-bottom: 0.4em;
 }
-/* line 192, ../../stylesheets/application_internal.sass */
+/* line 194, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0 0 0.4em;
 }
-/* line 194, ../../stylesheets/application_internal.sass */
+/* line 196, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li:last-of-type {
   margin-right: 0;
 }
-/* line 196, ../../stylesheets/application_internal.sass */
+/* line 198, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   clear: both;
   overflow: hidden;
@@ -454,32 +458,32 @@ body.three-col.bp #container footer {
   padding-top: 90px;
   margin-bottom: 800px;
 }
-/* line 202, ../../stylesheets/application_internal.sass */
+/* line 204, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper {
   border-top: 1px solid #878787;
   padding: 0;
   font-size: 0.75em;
 }
-/* line 206, ../../stylesheets/application_internal.sass */
+/* line 208, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper #about_asc {
   width: 460px;
   display: none;
 }
 
-/* line 212, ../../stylesheets/application_internal.sass */
+/* line 214, ../../stylesheets/application_internal.sass */
 article #slider {
   width: 460px;
   height: 320px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 213, ../../stylesheets/application_internal.sass */
+/* line 215, ../../stylesheets/application_internal.sass */
 article #slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 217, ../../stylesheets/application_internal.sass */
+/* line 219, ../../stylesheets/application_internal.sass */
 article #slider li {
   margin: 0;
   padding: 0;
@@ -488,7 +492,7 @@ article #slider li {
   height: 320px;
   overflow: hidden;
 }
-/* line 228, ../../stylesheets/application_internal.sass */
+/* line 230, ../../stylesheets/application_internal.sass */
 article #prevBtn, article #nextBtn {
   width: 6px;
   height: 11px;
@@ -496,15 +500,15 @@ article #prevBtn, article #nextBtn {
   left: 438px;
   top: -5px;
 }
-/* line 234, ../../stylesheets/application_internal.sass */
+/* line 236, ../../stylesheets/application_internal.sass */
 article #prevBtn a:link, article #prevBtn a:visited, article #prevBtn a:active, article #prevBtn a:hover, article #nextBtn a:link, article #nextBtn a:visited, article #nextBtn a:active, article #nextBtn a:hover {
   text-decoration: none;
 }
-/* line 236, ../../stylesheets/application_internal.sass */
+/* line 238, ../../stylesheets/application_internal.sass */
 article #prevBtn {
   background: url(Arrow_Left.png) top left no-repeat;
 }
-/* line 238, ../../stylesheets/application_internal.sass */
+/* line 240, ../../stylesheets/application_internal.sass */
 article #nextBtn {
   background: url(Arrow_Right.png) top left no-repeat;
 }

@@ -19,6 +19,8 @@
 
     = javascript_include_tag :application
 
+    %script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e8084886b4e0697", :type => "text/javascript"}
+
     -#%link{:href => "http://fonts.googleapis.com/css?family=Podkova", :rel => "stylesheet", :type => "text/css"}
     - if request.host == "localhost"
       %link{:rel => "stylesheet", :href => "http://f.fontdeck.com/s/css/0YqsPiW6g63C2r0wLfl2RFAC0Vc/localhost/11846.css", :type => "text/css"}
@@ -60,6 +62,8 @@
               = link_to(image_tag("sb/Twitter.png"), "http://twitter.com/#{CenatusCms::Application::TWITTER_NAME}")
               = link_to(image_tag("sb/Tumblr.png"), "#")
               = link_to(image_tag("sb/YouTube.png"), "#")
+            -#.addthis_toolbox.addthis_default_style
+            -#  %a.addthis_button_compact{:href => "http://www.addthis.com/bookmark.php?v=250&pubid=ra-4e8084886b4e0697"} Share
       = yield
       %footer
         .wrapper
