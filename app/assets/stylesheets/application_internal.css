@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 22, ../../stylesheets/application_internal.sass */
+/* line 15, ../../stylesheets/application_internal.sass */
 body.three-col.bp {
   background: #f9f9f9 url("grey_nav.png") repeat top right;
   color: #585858;
@@ -74,11 +74,11 @@ body.three-col.bp {
   font-size: 12px;
   line-height: 1.2em;
 }
-/* line 32, ../../stylesheets/application_internal.sass */
+/* line 24, ../../stylesheets/application_internal.sass */
 body.three-col.bp p {
   margin: 0 0 1em 0;
 }
-/* line 34, ../../stylesheets/application_internal.sass */
+/* line 26, ../../stylesheets/application_internal.sass */
 body.three-col.bp a {
   text-decoration: underline;
   color: #878787;
@@ -100,7 +100,7 @@ body.three-col.bp a:hover {
 body.three-col.bp a:active {
   color: #ff4500;
 }
-/* line 38, ../../stylesheets/application_internal.sass */
+/* line 30, ../../stylesheets/application_internal.sass */
 body.three-col.bp ul {
   list-style: none;
   padding-left: 0;
@@ -112,7 +112,7 @@ body.three-col.bp ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 42, ../../stylesheets/application_internal.sass */
+/* line 34, ../../stylesheets/application_internal.sass */
 body.three-col.bp h1, body.three-col.bp h2, body.three-col.bp h3, body.three-col.bp h4, body.three-col.bp h5, body.three-col.bp h6 {
   font-weight: normal;
   color: #222222;
@@ -122,27 +122,47 @@ body.three-col.bp h1, body.three-col.bp h2, body.three-col.bp h3, body.three-col
   font-weight: 400;
   font-style: normal;
 }
-/* line 49, ../../stylesheets/application_internal.sass */
+/* line 41, ../../stylesheets/application_internal.sass */
 body.three-col.bp h1 a:link, body.three-col.bp h1 a:visited, body.three-col.bp h1 a:active, body.three-col.bp h1 a:hover, body.three-col.bp h2 a:link, body.three-col.bp h2 a:visited, body.three-col.bp h2 a:active, body.three-col.bp h2 a:hover, body.three-col.bp h3 a:link, body.three-col.bp h3 a:visited, body.three-col.bp h3 a:active, body.three-col.bp h3 a:hover, body.three-col.bp h4 a:link, body.three-col.bp h4 a:visited, body.three-col.bp h4 a:active, body.three-col.bp h4 a:hover, body.three-col.bp h5 a:link, body.three-col.bp h5 a:visited, body.three-col.bp h5 a:active, body.three-col.bp h5 a:hover, body.three-col.bp h6 a:link, body.three-col.bp h6 a:visited, body.three-col.bp h6 a:active, body.three-col.bp h6 a:hover {
   text-decoration: none;
   font-weight: 400;
   color: #585858;
 }
-/* line 53, ../../stylesheets/application_internal.sass */
+/* line 45, ../../stylesheets/application_internal.sass */
 body.three-col.bp h2 {
   margin-top: 0;
 }
-/* line 55, ../../stylesheets/application_internal.sass */
+/* line 47, ../../stylesheets/application_internal.sass */
 body.three-col.bp h3 {
   border-top: 1px solid #585858;
   padding-top: 0.3em;
   margin-bottom: 0.5em;
 }
-/* line 59, ../../stylesheets/application_internal.sass */
+/* line 51, ../../stylesheets/application_internal.sass */
 body.three-col.bp h4 {
   margin-bottom: 0.5em;
 }
-/* line 64, ../../stylesheets/application_internal.sass */
+/* line 55, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header a:link, body.three-col.bp #container header a:visited {
+  text-decoration: none;
+  font-weight: normal;
+  color: #585858;
+  line-height: 1.5em;
+}
+/* line 60, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header a:active, body.three-col.bp #container header a:hover {
+  border-bottom: 0;
+}
+/* line 66, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header nav ul li a:active, body.three-col.bp #container header nav ul li a:hover {
+  border-bottom: 1px solid #585858;
+}
+
+/* line 71, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container {
+  margin: 0 10px 0 10px;
+}
+/* line 73, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header {
   padding-top: 18px;
   position: fixed;
@@ -150,55 +170,25 @@ body.three-col.bp #container header {
   background: url("grey_nav.png") repeat-x scroll 0 0 transparent;
   height: 72px;
 }
-/* line 71, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header .logo {
-  vertical-align: baseline;
-  height: 72px;
-}
-/* line 75, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav {
-  float: left;
-}
 /* line 79, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li a:link, body.three-col.bp #container header nav ul li a:visited {
-  text-decoration: none;
-  font-weight: normal;
-  color: #585858;
-  line-height: 1.5em;
-}
-/* line 84, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li a:active, body.three-col.bp #container header nav ul li a:hover {
-  border-bottom: 1px solid #585858;
-}
-/* line 87, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header .socialbookmarks a:link, body.three-col.bp #container header .socialbookmarks a:visited {
-  text-decoration: none;
-  font-weight: normal;
-  color: #585858;
-  line-height: 1.5em;
-}
-/* line 92, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header .socialbookmarks a:active, body.three-col.bp #container header .socialbookmarks a:hover {
-  border-bottom: 0;
-}
-
-/* line 98, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container {
-  margin: 0 10px 0 10px;
-}
-/* line 101, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .logo {
   display: inline;
   float: left;
   margin-right: 20px;
   width: 140px;
   line-height: 1.5em;
+  vertical-align: baseline;
+  height: 72px;
 }
 /* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.three-col.bp #container header .logo {
   overflow-x: hidden;
 }
-/* line 105, ../../stylesheets/application_internal.sass */
+/* line 85, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header nav {
+  float: left;
+}
+/* line 87, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul {
   margin: 0;
   padding: 0;
@@ -208,7 +198,7 @@ body.three-col.bp #container header nav ul {
   padding-left: 0;
   margin: 0;
 }
-/* line 109, ../../stylesheets/application_internal.sass */
+/* line 91, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li {
   list-style-image: none;
   list-style-type: none;
@@ -240,7 +230,7 @@ body.three-col.bp #container header nav ul li.last {
 * html body.three-col.bp #container header nav ul li {
   overflow-x: hidden;
 }
-/* line 113, ../../stylesheets/application_internal.sass */
+/* line 95, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header nav ul li.contact {
   display: inline;
   float: left;
@@ -251,7 +241,7 @@ body.three-col.bp #container header nav ul li.contact {
 * html body.three-col.bp #container header nav ul li.contact {
   overflow-x: hidden;
 }
-/* line 115, ../../stylesheets/application_internal.sass */
+/* line 97, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .follow {
   display: inline;
   float: left;
@@ -263,7 +253,7 @@ body.three-col.bp #container header .follow {
 * html body.three-col.bp #container header .follow {
   overflow-x: hidden;
 }
-/* line 118, ../../stylesheets/application_internal.sass */
+/* line 100, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .follow .socialbookmarks {
   clear: both;
   list-style-type: none;
@@ -276,31 +266,31 @@ body.three-col.bp #container header .follow .socialbookmarks, body.three-col.bp 
   padding: 0px;
   display: inline;
 }
-/* line 123, ../../stylesheets/application_internal.sass */
+/* line 105, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section {
   clear: both;
   overflow: hidden;
   padding-top: 90px;
 }
-/* line 127, ../../stylesheets/application_internal.sass */
+/* line 109, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col, body.three-col.bp #container section .wrapper {
   overflow: hidden;
   border-top: 1px solid #585858;
   padding-top: 19px;
 }
-/* line 132, ../../stylesheets/application_internal.sass */
+/* line 113, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article, body.three-col.bp #container section .wrapper article {
   padding-bottom: 1px;
 }
-/* line 134, ../../stylesheets/application_internal.sass */
+/* line 115, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article .fivecol_content, body.three-col.bp #container section .wrapper article .fivecol_content {
   width: 380px;
 }
-/* line 139, ../../stylesheets/application_internal.sass */
+/* line 117, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article .addthis_toolbox, body.three-col.bp #container section .wrapper article .addthis_toolbox {
   margin-top: 20px;
 }
-/* line 142, ../../stylesheets/application_internal.sass */
+/* line 120, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul, body.three-col.bp #container section .wrapper aside ul {
   list-style: none;
   padding-left: 0;
@@ -312,62 +302,74 @@ body.three-col.bp #container section .left-col aside ul li, body.three-col.bp #c
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 146, ../../stylesheets/application_internal.sass */
+/* line 124, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li, body.three-col.bp #container section .wrapper aside ul li {
   border-top: 1px solid #585858;
   padding: 3px 0 20px 0;
 }
-/* line 149, ../../stylesheets/application_internal.sass */
+/* line 127, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li li, body.three-col.bp #container section .wrapper aside ul li li {
   border-top: 0;
   padding: 0 0 6px 0;
 }
-/* line 152, ../../stylesheets/application_internal.sass */
+/* line 130, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li li:last-of-type, body.three-col.bp #container section .wrapper aside ul li li:last-of-type {
   padding: 0;
 }
-/* line 154, ../../stylesheets/application_internal.sass */
+/* line 132, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li input, body.three-col.bp #container section .wrapper aside ul li input {
   margin: 5px 0;
 }
-/* line 156, ../../stylesheets/application_internal.sass */
+/* line 134, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li:first-of-type, body.three-col.bp #container section .wrapper aside ul li:first-of-type {
   border-top: 0;
   padding-top: 0;
 }
-/* line 163, ../../stylesheets/application_internal.sass */
+/* line 137, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#listen {
+  margin-top: -30px;
+}
+/* line 140, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen article li {
   width: 460px;
   display: none;
 }
-/* line 167, ../../stylesheets/application_internal.sass */
+/* line 144, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen aside li {
   padding: 3px 0 12px 0;
 }
-/* line 170, ../../stylesheets/application_internal.sass */
+/* line 146, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#biography {
+  margin-top: -30px;
+}
+/* line 148, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography #biog_image {
   margin-bottom: 25px;
   width: 460px;
 }
-/* line 175, ../../stylesheets/application_internal.sass */
+/* line 153, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li {
   padding: 2px 0 10px 0;
   border-top: 1px dotted #585858;
 }
-/* line 178, ../../stylesheets/application_internal.sass */
+/* line 156, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li:first-of-type {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
   margin-top: 10px;
 }
-/* line 183, ../../stylesheets/application_internal.sass */
+/* line 160, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#gigs {
+  margin-top: -30px;
+}
+/* line 162, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li {
   clear: both;
   overflow: hidden;
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
 }
-/* line 188, ../../stylesheets/application_internal.sass */
+/* line 167, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li date {
   display: inline;
   float: left;
@@ -379,7 +381,7 @@ body.three-col.bp #container section#gigs ul li date {
 * html body.three-col.bp #container section#gigs ul li date {
   overflow-x: hidden;
 }
-/* line 191, ../../stylesheets/application_internal.sass */
+/* line 170, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li p {
   display: inline;
   float: left;
@@ -392,7 +394,7 @@ body.three-col.bp #container section#gigs ul li p {
 * html body.three-col.bp #container section#gigs ul li p {
   overflow-x: hidden;
 }
-/* line 195, ../../stylesheets/application_internal.sass */
+/* line 174, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs ul li p:last-of-type {
   display: inline;
   float: left;
@@ -403,7 +405,11 @@ body.three-col.bp #container section#gigs ul li p:last-of-type {
 * html body.three-col.bp #container section#gigs ul li p:last-of-type {
   overflow-x: hidden;
 }
-/* line 198, ../../stylesheets/application_internal.sass */
+/* line 176, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#contact {
+  margin-top: -30px;
+}
+/* line 178, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul {
   margin: 0;
   padding: 0;
@@ -434,7 +440,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 200, ../../stylesheets/application_internal.sass */
+/* line 180, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   list-style-image: none;
   list-style-type: none;
@@ -466,48 +472,52 @@ body.three-col.bp #container section#contact ul li.last {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 204, ../../stylesheets/application_internal.sass */
+/* line 184, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li h2 {
   margin-bottom: 0.4em;
 }
-/* line 206, ../../stylesheets/application_internal.sass */
+/* line 186, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0 0 0.4em;
 }
-/* line 208, ../../stylesheets/application_internal.sass */
+/* line 188, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li:last-of-type {
   margin-right: 0;
 }
-/* line 211, ../../stylesheets/application_internal.sass */
+/* line 190, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   clear: both;
   overflow: hidden;
-  margin-top: 90px;
+  margin-top: -30px;
+  padding-top: 90px;
+  margin-bottom: 500px;
+}
+/* line 196, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container footer .wrapper {
   border-top: 1px solid #585858;
   padding: 0;
-  margin-bottom: 500px;
   font-size: 0.75em;
 }
-/* line 219, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container footer #about_asc {
+/* line 200, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container footer .wrapper #about_asc {
   width: 460px;
   display: none;
 }
 
-/* line 225, ../../stylesheets/application_internal.sass */
+/* line 206, ../../stylesheets/application_internal.sass */
 article #slider {
   width: 460px;
   height: 320px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 226, ../../stylesheets/application_internal.sass */
+/* line 207, ../../stylesheets/application_internal.sass */
 article #slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 230, ../../stylesheets/application_internal.sass */
+/* line 211, ../../stylesheets/application_internal.sass */
 article #slider li {
   margin: 0;
   padding: 0;
@@ -516,7 +526,7 @@ article #slider li {
   height: 320px;
   overflow: hidden;
 }
-/* line 241, ../../stylesheets/application_internal.sass */
+/* line 222, ../../stylesheets/application_internal.sass */
 article #prevBtn, article #nextBtn {
   width: 6px;
   height: 11px;
@@ -524,15 +534,15 @@ article #prevBtn, article #nextBtn {
   left: 438px;
   top: -5px;
 }
-/* line 247, ../../stylesheets/application_internal.sass */
+/* line 228, ../../stylesheets/application_internal.sass */
 article #prevBtn a:link, article #prevBtn a:visited, article #prevBtn a:active, article #prevBtn a:hover, article #nextBtn a:link, article #nextBtn a:visited, article #nextBtn a:active, article #nextBtn a:hover {
   text-decoration: none;
 }
-/* line 249, ../../stylesheets/application_internal.sass */
+/* line 230, ../../stylesheets/application_internal.sass */
 article #prevBtn {
   background: url(Arrow_Left.png) top left no-repeat;
 }
-/* line 251, ../../stylesheets/application_internal.sass */
+/* line 232, ../../stylesheets/application_internal.sass */
 article #nextBtn {
   background: url(Arrow_Right.png) top left no-repeat;
 }

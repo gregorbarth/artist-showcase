@@ -9,19 +9,11 @@ $dark_grey: #585858
 $light_grey: #878787
 $orange:  #ff4500
 
-//@font-face {
-//  font-family: AS_header_font;
-//  src: url('Sansation_Light.ttf'), url('Sansation_Light.eot') format("opentype");
-//  /* IE */ }
-//
 //@import url(http://fonts.googleapis.com/css?family=Podkova)
 
 // FONTS and LINK STYLES
-
-
 body.three-col.bp
   background: #f9f9f9 url("grey_nav.png") repeat top right
-
   color: $dark_grey
   font-family: "Monosten E", Courier, monospace
   font-size-adjust: 0.5
@@ -58,50 +50,40 @@ body.three-col.bp
     margin-bottom: 0.5em
   h4
     margin-bottom: 0.5em
-
-  //  HEADER styling
   #container
     header
-      padding-top: 18px
-      position: fixed
-      //width: 100%
-      z-index: 1000
-      background: url("grey_nav.png") repeat-x scroll 0 0 transparent
-      height: 72px
-      .logo
-        //background: url(span-4-rows-4.png) top left no-repeat
-        vertical-align: baseline
-        height: 72px
+      a:link, a:visited
+        text-decoration: none
+        font-weight: normal
+        color: $dark_grey
+        line-height: 1.5em
+      a:active, a:hover
+        border-bottom: 0
       nav
-        float: left
         ul
           li
             a:link, a:visited
-              text-decoration: none
-              font-weight: normal
-              color: $dark_grey
-              line-height: 1.5em
             a:active, a:hover
               border-bottom: 1px solid $dark_grey
-      .socialbookmarks
-        a:link, a:visited
-          text-decoration: none
-          font-weight: normal
-          color: $dark_grey
-          line-height: 1.5em
-        a:active, a:hover
-          border-bottom: 0
-
 
 // STRUCTURE
 body.three-col.bp
   #container
     margin: 0 10px 0 10px
     header
+      padding-top: 18px
+      position: fixed
+      z-index: 1000
+      background: url("grey_nav.png") repeat-x scroll 0 0 transparent
+      height: 72px
       .logo
         +column(2)
         line-height: 1.5em
+        //background: url(span-4-rows-4.png) top left no-repeat
+        vertical-align: baseline
+        height: 72px
       nav
+        float: left
         ul
           +horizontal-list-container
           padding-left: 0
@@ -125,7 +107,6 @@ body.three-col.bp
       overflow: hidden
       padding-top: 90px
       .left-col, .wrapper
-        //clear: both
         overflow: hidden
         border-top: 1px solid $dark_grey
         padding-top: 19px
@@ -133,9 +114,6 @@ body.three-col.bp
           padding-bottom: 1px
           .fivecol_content
             +span(5)
-            //clear: both
-            //display: block
-            //float: none
           .addthis_toolbox
             margin-top: 20px
         aside
@@ -156,9 +134,8 @@ body.three-col.bp
             li:first-of-type
               border-top: 0
               padding-top: 0
-
-
     section#listen
+      margin-top: -30px
       article
         li
           +span(6)
@@ -167,6 +144,7 @@ body.three-col.bp
         li
           padding: 3px 0 12px 0
     section#biography
+      margin-top: -30px
       #biog_image
         margin-bottom: 25px
         +span(6)
@@ -180,6 +158,7 @@ body.three-col.bp
             padding: 2px 0 10px 0
             margin-top: 10px
     section#gigs
+      margin-top: -30px
       ul li
         clear: both
         overflow: hidden
@@ -195,6 +174,7 @@ body.three-col.bp
         p:last-of-type
           +column(2)
     section#contact
+      margin-top: -30px
       ul
         +horizontal-list
         li
@@ -207,20 +187,21 @@ body.three-col.bp
             margin: 0 0 0.4em
         li:last-of-type
           +last
-
     footer
       clear: both
       overflow: hidden
-      margin-top: 90px
-      border-top: 1px solid $dark_grey
-      padding: 0
+      margin-top: -30px
+      padding-top: 90px
       margin-bottom: 500px
-      font-size: 0.75em
-      #about_asc
-        +span(6)
-        display: none
+      .wrapper
+        border-top: 1px solid $dark_grey
+        padding: 0
+        font-size: 0.75em
+        #about_asc
+          +span(6)
+          display: none
 
-
+//sildeshow
 article
   #slider
     ul

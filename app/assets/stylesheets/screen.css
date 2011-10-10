@@ -522,7 +522,7 @@ body.three-col #container {
 * html body.three-col #container {
   overflow-x: hidden;
 }
-/* line 37, ../../stylesheets/screen.sass */
+/* line 36, ../../stylesheets/screen.sass */
 body.three-col #container section .left-col {
   display: inline;
   float: left;
@@ -533,7 +533,7 @@ body.three-col #container section .left-col {
 * html body.three-col #container section .left-col {
   overflow-x: hidden;
 }
-/* line 41, ../../stylesheets/screen.sass */
+/* line 39, ../../stylesheets/screen.sass */
 body.three-col #container section .wrapper article {
   display: inline;
   float: left;
@@ -545,7 +545,7 @@ body.three-col #container section .wrapper article {
 * html body.three-col #container section .wrapper article {
   overflow-x: hidden;
 }
-/* line 44, ../../stylesheets/screen.sass */
+/* line 42, ../../stylesheets/screen.sass */
 body.three-col #container section .wrapper aside {
   display: inline;
   float: left;
@@ -556,8 +556,8 @@ body.three-col #container section .wrapper aside {
 * html body.three-col #container section .wrapper aside {
   overflow-x: hidden;
 }
-/* line 46, ../../stylesheets/screen.sass */
-body.three-col #container footer {
+/* line 45, ../../stylesheets/screen.sass */
+body.three-col #container footer .wrapper {
   display: inline;
   float: left;
   position: relative;
@@ -568,6 +568,6 @@ body.three-col #container footer {
   width: 780px;
 }
 /* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col #container footer {
+* html body.three-col #container footer .wrapper {
   overflow-x: hidden;
 }
