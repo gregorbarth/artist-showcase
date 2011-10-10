@@ -100,13 +100,22 @@
       %h1= "Gigs / Schedule"
     .wrapper
       %article
+        - @gigs_by_month.each do |month, gigs|
+          %h2= month.strftime("%b %Y")
+          %table
+            - gigs.each do |gig|
+              %tr{:class => "gig"}
+                %td{:class => "date"}
+                  = gig.start.strftime('%a %d')
+                %td{:class => "location"}
+                  = link_to gig.venue.display_name, gig.uri
+                %td{:class => "city"}
+                  = gig.location.city
+
         -#%h2= "Dec. 2012"
-        %table
-          - for gig in @gigs.results do
-            %tr
-              %td= gig.start.strftime('%d/%m/%y')
-              %td= link_to gig.venue.display_name, gig.uri
-              %td= gig.location.city
+        -#%table
+        -#  - for gig in @gigs.results do
+
       %aside
 %section#contact
   - if @contact_section.present?
