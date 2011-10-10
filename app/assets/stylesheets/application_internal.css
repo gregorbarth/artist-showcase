@@ -363,53 +363,31 @@ body.three-col.bp #container section#gigs {
   margin-top: -30px;
 }
 /* line 162, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container section#gigs ul li {
-  clear: both;
-  overflow: hidden;
+body.three-col.bp #container section#gigs table {
+  margin-bottom: 0;
+}
+/* line 164, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#gigs table tr {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
 }
 /* line 167, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container section#gigs ul li date {
-  display: inline;
-  float: left;
-  margin-right: 20px;
-  width: 60px;
-  float: left;
-}
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container section#gigs ul li date {
-  overflow-x: hidden;
-}
-/* line 170, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container section#gigs ul li p {
-  display: inline;
-  float: left;
-  margin-right: 20px;
+body.three-col.bp #container section#gigs table tr td {
   width: 220px;
-  float: left;
-  margin: 0;
 }
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container section#gigs ul li p {
-  overflow-x: hidden;
+/* line 169, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#gigs table tr td:first-of-type {
+  width: 60px;
 }
-/* line 174, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container section#gigs ul li p:last-of-type {
-  display: inline;
-  float: left;
-  margin-right: 20px;
+/* line 171, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#gigs table tr td:last-of-type {
   width: 140px;
 }
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container section#gigs ul li p:last-of-type {
-  overflow-x: hidden;
-}
-/* line 176, ../../stylesheets/application_internal.sass */
+/* line 173, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact {
   margin-top: -30px;
 }
-/* line 178, ../../stylesheets/application_internal.sass */
+/* line 175, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul {
   margin: 0;
   padding: 0;
@@ -440,7 +418,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 180, ../../stylesheets/application_internal.sass */
+/* line 177, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   list-style-image: none;
   list-style-type: none;
@@ -472,19 +450,19 @@ body.three-col.bp #container section#contact ul li.last {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 184, ../../stylesheets/application_internal.sass */
+/* line 181, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li h2 {
   margin-bottom: 0.4em;
 }
-/* line 186, ../../stylesheets/application_internal.sass */
+/* line 183, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0 0 0.4em;
 }
-/* line 188, ../../stylesheets/application_internal.sass */
+/* line 185, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li:last-of-type {
   margin-right: 0;
 }
-/* line 190, ../../stylesheets/application_internal.sass */
+/* line 187, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   clear: both;
   overflow: hidden;
@@ -492,32 +470,32 @@ body.three-col.bp #container footer {
   padding-top: 90px;
   margin-bottom: 500px;
 }
-/* line 196, ../../stylesheets/application_internal.sass */
+/* line 193, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper {
   border-top: 1px solid #585858;
   padding: 0;
   font-size: 0.75em;
 }
-/* line 200, ../../stylesheets/application_internal.sass */
+/* line 197, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper #about_asc {
   width: 460px;
   display: none;
 }
 
-/* line 206, ../../stylesheets/application_internal.sass */
+/* line 203, ../../stylesheets/application_internal.sass */
 article #slider {
   width: 460px;
   height: 320px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 207, ../../stylesheets/application_internal.sass */
+/* line 204, ../../stylesheets/application_internal.sass */
 article #slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 211, ../../stylesheets/application_internal.sass */
+/* line 208, ../../stylesheets/application_internal.sass */
 article #slider li {
   margin: 0;
   padding: 0;
@@ -526,7 +504,7 @@ article #slider li {
   height: 320px;
   overflow: hidden;
 }
-/* line 222, ../../stylesheets/application_internal.sass */
+/* line 219, ../../stylesheets/application_internal.sass */
 article #prevBtn, article #nextBtn {
   width: 6px;
   height: 11px;
@@ -534,15 +512,15 @@ article #prevBtn, article #nextBtn {
   left: 438px;
   top: -5px;
 }
-/* line 228, ../../stylesheets/application_internal.sass */
+/* line 225, ../../stylesheets/application_internal.sass */
 article #prevBtn a:link, article #prevBtn a:visited, article #prevBtn a:active, article #prevBtn a:hover, article #nextBtn a:link, article #nextBtn a:visited, article #nextBtn a:active, article #nextBtn a:hover {
   text-decoration: none;
 }
-/* line 230, ../../stylesheets/application_internal.sass */
+/* line 227, ../../stylesheets/application_internal.sass */
 article #prevBtn {
   background: url(Arrow_Left.png) top left no-repeat;
 }
-/* line 232, ../../stylesheets/application_internal.sass */
+/* line 229, ../../stylesheets/application_internal.sass */
 article #nextBtn {
   background: url(Arrow_Right.png) top left no-repeat;
 }

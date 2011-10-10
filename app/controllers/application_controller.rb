@@ -38,8 +38,8 @@ class ApplicationController < ActionController::Base
     require 'songkickr'
     begin
       remote = Songkickr::Remote.new CenatusCms::Application::SONGKICK_API
-      @results = remote.events(:artist_name => CenatusCms::Application::SONGKICK_ARTIST_NAME)
-      puts @results
+      @gigs = remote.events(:artist_name => CenatusCms::Application::SONGKICK_ARTIST_NAME)
+      puts @gigs
     end
   end
 
