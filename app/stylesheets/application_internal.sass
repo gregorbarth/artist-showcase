@@ -45,7 +45,7 @@ body.three-col.bp
   h2
     margin-top: 0
   h3
-    border-top: 1px solid $dark_grey
+    border-top: 1px solid $light_grey
     padding-top: 0.3em
     margin-bottom: 0.5em
   h4
@@ -68,47 +68,52 @@ body.three-col.bp
 
 // STRUCTURE
 body.three-col.bp
+  //margin:50px 0px;
+  //padding: 0px;
+  text-align: center
   #container
-    margin: 0 10px 0 10px
+    //margin: 0px auto
+    text-align: left
     header
       padding-top: 18px
       position: fixed
       z-index: 1000
       background: url("grey_nav.png") repeat-x scroll 0 0 transparent
-      height: 72px
       .logo
-        +column(2)
         line-height: 1.5em
         //background: url(span-4-rows-4.png) top left no-repeat
         vertical-align: baseline
         height: 72px
-      nav
+        border-bottom: 1px solid $light_grey
+      .wrapper
+        height: 72px
         float: left
-        ul
-          +horizontal-list-container
-          padding-left: 0
-          margin: 0
-          li
-            +horizontal-list-item
-            +column(1)
-            padding: 0px
-          li.contact
-            +column(3)
-      .follow
-        +column(3, true)
-        line-height: 1.5em
-        .socialbookmarks
-          clear: both
-          +inline-list
-          white-space: normal
-          float: left
+        border-bottom: 1px solid $light_grey
+        nav
+          ul
+            +horizontal-list-container
+            padding-left: 0
+            margin: 0
+            li
+              +horizontal-list-item
+              padding: 0px
+              margin-right: 40px
+            li.contact
+              margin-right: 0px
+        .follow
+          line-height: 1.5em
+          .socialbookmarks
+            clear: both
+            +inline-list
+            white-space: normal
+            float: left
     section
       clear: both
       overflow: hidden
       padding-top: 90px
       .left-col, .wrapper
         overflow: hidden
-        border-top: 1px solid $dark_grey
+        border-top: 1px solid $light_grey
         padding-top: 19px
         article
           padding-bottom: 1px
@@ -122,7 +127,7 @@ body.three-col.bp
             padding-left: 0
             margin: 0
             li
-              border-top: 1px solid $dark_grey
+              border-top: 1px solid $light_grey
               padding: 3px 0 20px 0
               li
                 border-top: 0
@@ -193,9 +198,9 @@ body.three-col.bp
       overflow: hidden
       margin-top: -30px
       padding-top: 90px
-      margin-bottom: 500px
+      margin-bottom: 800px
       .wrapper
-        border-top: 1px solid $dark_grey
+        border-top: 1px solid $light_grey
         padding: 0
         font-size: 0.75em
         #about_asc

@@ -43,22 +43,23 @@
     #container
       %header
         .logo= "Ziggi Stardust"
-        %nav
-          %ul
-            %li.landing= nav_link "Home","#home"
-            %li.listen= nav_link "Listen","#listen"
-            %li.biography= nav_link "Biography","#biography"
-            %li.gigs= nav_link "Gigs","#gigs"
-            %li.contact= nav_link "Contact","#contact"
-        .follow
-          .social_intro= "Follow"
-          .socialbookmarks
-            -#= link_to(image_tag("sb/rss_16.png"), "#")
-            = link_to(image_tag("sb/Facebook.png"), "#")
-            = link_to(image_tag("sb/LastFM.png"), "#")
-            = link_to(image_tag("sb/Twitter.png"), "http://twitter.com/#{CenatusCms::Application::TWITTER_NAME}")
-            = link_to(image_tag("sb/Tumblr.png"), "#")
-            = link_to(image_tag("sb/YouTube.png"), "#")
+        .wrapper
+          %nav
+            %ul
+              %li.landing= nav_link "Home","#home"
+              %li.listen= nav_link "Listen","#listen"
+              %li.biography= nav_link "Biography","#biography"
+              %li.gigs= nav_link "Gigs","#gigs"
+              %li.contact= nav_link "Contact","#contact"
+          .follow
+            .social_intro= "Follow"
+            .socialbookmarks
+              -#= link_to(image_tag("sb/rss_16.png"), "#")
+              = link_to(image_tag("sb/Facebook.png"), "#")
+              = link_to(image_tag("sb/LastFM.png"), "#")
+              = link_to(image_tag("sb/Twitter.png"), "http://twitter.com/#{CenatusCms::Application::TWITTER_NAME}")
+              = link_to(image_tag("sb/Tumblr.png"), "#")
+              = link_to(image_tag("sb/YouTube.png"), "#")
       = yield
       %footer
         .wrapper

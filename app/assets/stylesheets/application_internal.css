@@ -134,7 +134,7 @@ body.three-col.bp h2 {
 }
 /* line 47, ../../stylesheets/application_internal.sass */
 body.three-col.bp h3 {
-  border-top: 1px solid #585858;
+  border-top: 1px solid #878787;
   padding-top: 0.3em;
   margin-bottom: 0.5em;
 }
@@ -158,38 +158,36 @@ body.three-col.bp #container header nav ul li a:active, body.three-col.bp #conta
   border-bottom: 1px solid #585858;
 }
 
-/* line 71, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container {
-  margin: 0 10px 0 10px;
+/* line 70, ../../stylesheets/application_internal.sass */
+body.three-col.bp {
+  text-align: center;
 }
-/* line 73, ../../stylesheets/application_internal.sass */
+/* line 74, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container {
+  text-align: left;
+}
+/* line 77, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header {
   padding-top: 18px;
   position: fixed;
   z-index: 1000;
   background: url("grey_nav.png") repeat-x scroll 0 0 transparent;
-  height: 72px;
 }
-/* line 79, ../../stylesheets/application_internal.sass */
+/* line 82, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container header .logo {
-  display: inline;
-  float: left;
-  margin-right: 20px;
-  width: 140px;
   line-height: 1.5em;
   vertical-align: baseline;
   height: 72px;
+  border-bottom: 1px solid #878787;
 }
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container header .logo {
-  overflow-x: hidden;
-}
-/* line 85, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav {
+/* line 88, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .wrapper {
+  height: 72px;
   float: left;
+  border-bottom: 1px solid #878787;
 }
-/* line 87, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul {
+/* line 93, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .wrapper nav ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -198,8 +196,8 @@ body.three-col.bp #container header nav ul {
   padding-left: 0;
   margin: 0;
 }
-/* line 91, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li {
+/* line 97, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .wrapper nav ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
@@ -208,89 +206,67 @@ body.three-col.bp #container header nav ul li {
   float: left;
   padding-left: 4px;
   padding-right: 4px;
-  display: inline;
-  float: left;
-  margin-right: 20px;
-  width: 60px;
   padding: 0px;
+  margin-right: 40px;
 }
 /* line 48, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-body.three-col.bp #container header nav ul li:first-child, body.three-col.bp #container header nav ul li.first {
+body.three-col.bp #container header .wrapper nav ul li:first-child, body.three-col.bp #container header .wrapper nav ul li.first {
   padding-left: 0;
 }
 /* line 49, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-body.three-col.bp #container header nav ul li:last-child {
+body.three-col.bp #container header .wrapper nav ul li:last-child {
   padding-right: 0;
 }
 /* line 50, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-body.three-col.bp #container header nav ul li.last {
+body.three-col.bp #container header .wrapper nav ul li.last {
   padding-right: 0;
 }
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container header nav ul li {
-  overflow-x: hidden;
+/* line 101, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .wrapper nav ul li.contact {
+  margin-right: 0px;
 }
-/* line 95, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header nav ul li.contact {
-  display: inline;
-  float: left;
-  margin-right: 20px;
-  width: 220px;
-}
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container header nav ul li.contact {
-  overflow-x: hidden;
-}
-/* line 97, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header .follow {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 220px;
+/* line 103, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .wrapper .follow {
   line-height: 1.5em;
 }
-/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col.bp #container header .follow {
-  overflow-x: hidden;
-}
-/* line 100, ../../stylesheets/application_internal.sass */
-body.three-col.bp #container header .follow .socialbookmarks {
+/* line 105, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container header .wrapper .follow .socialbookmarks {
   clear: both;
   list-style-type: none;
   white-space: normal;
   float: left;
 }
 /* line 5, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
-body.three-col.bp #container header .follow .socialbookmarks, body.three-col.bp #container header .follow .socialbookmarks li {
+body.three-col.bp #container header .wrapper .follow .socialbookmarks, body.three-col.bp #container header .wrapper .follow .socialbookmarks li {
   margin: 0px;
   padding: 0px;
   display: inline;
 }
-/* line 105, ../../stylesheets/application_internal.sass */
+/* line 110, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section {
   clear: both;
   overflow: hidden;
   padding-top: 90px;
 }
-/* line 109, ../../stylesheets/application_internal.sass */
+/* line 114, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col, body.three-col.bp #container section .wrapper {
   overflow: hidden;
-  border-top: 1px solid #585858;
+  border-top: 1px solid #878787;
   padding-top: 19px;
 }
-/* line 113, ../../stylesheets/application_internal.sass */
+/* line 118, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article, body.three-col.bp #container section .wrapper article {
   padding-bottom: 1px;
 }
-/* line 115, ../../stylesheets/application_internal.sass */
+/* line 120, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article .fivecol_content, body.three-col.bp #container section .wrapper article .fivecol_content {
   width: 380px;
 }
-/* line 117, ../../stylesheets/application_internal.sass */
+/* line 122, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col article .addthis_toolbox, body.three-col.bp #container section .wrapper article .addthis_toolbox {
   margin-top: 20px;
 }
-/* line 120, ../../stylesheets/application_internal.sass */
+/* line 125, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul, body.three-col.bp #container section .wrapper aside ul {
   list-style: none;
   padding-left: 0;
@@ -302,100 +278,100 @@ body.three-col.bp #container section .left-col aside ul li, body.three-col.bp #c
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 124, ../../stylesheets/application_internal.sass */
+/* line 129, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li, body.three-col.bp #container section .wrapper aside ul li {
-  border-top: 1px solid #585858;
+  border-top: 1px solid #878787;
   padding: 3px 0 20px 0;
 }
-/* line 127, ../../stylesheets/application_internal.sass */
+/* line 132, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li li, body.three-col.bp #container section .wrapper aside ul li li {
   border-top: 0;
   padding: 0 0 6px 0;
 }
-/* line 130, ../../stylesheets/application_internal.sass */
+/* line 135, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li li:last-of-type, body.three-col.bp #container section .wrapper aside ul li li:last-of-type {
   padding: 0;
 }
-/* line 132, ../../stylesheets/application_internal.sass */
+/* line 137, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li input, body.three-col.bp #container section .wrapper aside ul li input {
   margin: 5px 0;
 }
-/* line 134, ../../stylesheets/application_internal.sass */
+/* line 139, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section .left-col aside ul li:first-of-type, body.three-col.bp #container section .wrapper aside ul li:first-of-type {
   border-top: 0;
   padding-top: 0;
 }
-/* line 137, ../../stylesheets/application_internal.sass */
+/* line 142, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen {
   margin-top: -30px;
 }
-/* line 140, ../../stylesheets/application_internal.sass */
+/* line 145, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen article li {
   width: 460px;
   display: none;
 }
-/* line 144, ../../stylesheets/application_internal.sass */
+/* line 149, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen aside li {
   padding: 3px 0 12px 0;
 }
-/* line 146, ../../stylesheets/application_internal.sass */
+/* line 151, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography {
   margin-top: -30px;
 }
-/* line 148, ../../stylesheets/application_internal.sass */
+/* line 153, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography #biog_image {
   margin-bottom: 25px;
   width: 460px;
 }
-/* line 153, ../../stylesheets/application_internal.sass */
+/* line 158, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li {
   padding: 2px 0 10px 0;
   border-top: 1px dotted #585858;
 }
-/* line 156, ../../stylesheets/application_internal.sass */
+/* line 161, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li:first-of-type {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
   margin-top: 10px;
 }
-/* line 160, ../../stylesheets/application_internal.sass */
+/* line 165, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs {
   margin-top: -30px;
 }
-/* line 162, ../../stylesheets/application_internal.sass */
+/* line 167, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table {
   margin-bottom: 0;
 }
-/* line 164, ../../stylesheets/application_internal.sass */
+/* line 169, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
 }
-/* line 167, ../../stylesheets/application_internal.sass */
+/* line 172, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td {
   padding: 2px 0 8px 0;
 }
-/* line 169, ../../stylesheets/application_internal.sass */
+/* line 174, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.location {
   width: 220px;
 }
-/* line 171, ../../stylesheets/application_internal.sass */
+/* line 176, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.date {
   width: 60px;
 }
-/* line 173, ../../stylesheets/application_internal.sass */
+/* line 178, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.city {
   width: 140px;
 }
-/* line 175, ../../stylesheets/application_internal.sass */
+/* line 180, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs h2 {
   margin: 0;
 }
-/* line 177, ../../stylesheets/application_internal.sass */
+/* line 182, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact {
   margin-top: -30px;
 }
-/* line 179, ../../stylesheets/application_internal.sass */
+/* line 184, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul {
   margin: 0;
   padding: 0;
@@ -426,7 +402,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 181, ../../stylesheets/application_internal.sass */
+/* line 186, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   list-style-image: none;
   list-style-type: none;
@@ -458,52 +434,52 @@ body.three-col.bp #container section#contact ul li.last {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 185, ../../stylesheets/application_internal.sass */
+/* line 190, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li h2 {
   margin-bottom: 0.4em;
 }
-/* line 187, ../../stylesheets/application_internal.sass */
+/* line 192, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0 0 0.4em;
 }
-/* line 189, ../../stylesheets/application_internal.sass */
+/* line 194, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li:last-of-type {
   margin-right: 0;
 }
-/* line 191, ../../stylesheets/application_internal.sass */
+/* line 196, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   clear: both;
   overflow: hidden;
   margin-top: -30px;
   padding-top: 90px;
-  margin-bottom: 500px;
+  margin-bottom: 800px;
 }
-/* line 197, ../../stylesheets/application_internal.sass */
+/* line 202, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper {
-  border-top: 1px solid #585858;
+  border-top: 1px solid #878787;
   padding: 0;
   font-size: 0.75em;
 }
-/* line 201, ../../stylesheets/application_internal.sass */
+/* line 206, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper #about_asc {
   width: 460px;
   display: none;
 }
 
-/* line 207, ../../stylesheets/application_internal.sass */
+/* line 212, ../../stylesheets/application_internal.sass */
 article #slider {
   width: 460px;
   height: 320px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 208, ../../stylesheets/application_internal.sass */
+/* line 213, ../../stylesheets/application_internal.sass */
 article #slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 212, ../../stylesheets/application_internal.sass */
+/* line 217, ../../stylesheets/application_internal.sass */
 article #slider li {
   margin: 0;
   padding: 0;
@@ -512,7 +488,7 @@ article #slider li {
   height: 320px;
   overflow: hidden;
 }
-/* line 223, ../../stylesheets/application_internal.sass */
+/* line 228, ../../stylesheets/application_internal.sass */
 article #prevBtn, article #nextBtn {
   width: 6px;
   height: 11px;
@@ -520,15 +496,15 @@ article #prevBtn, article #nextBtn {
   left: 438px;
   top: -5px;
 }
-/* line 229, ../../stylesheets/application_internal.sass */
+/* line 234, ../../stylesheets/application_internal.sass */
 article #prevBtn a:link, article #prevBtn a:visited, article #prevBtn a:active, article #prevBtn a:hover, article #nextBtn a:link, article #nextBtn a:visited, article #nextBtn a:active, article #nextBtn a:hover {
   text-decoration: none;
 }
-/* line 231, ../../stylesheets/application_internal.sass */
+/* line 236, ../../stylesheets/application_internal.sass */
 article #prevBtn {
   background: url(Arrow_Left.png) top left no-repeat;
 }
-/* line 233, ../../stylesheets/application_internal.sass */
+/* line 238, ../../stylesheets/application_internal.sass */
 article #nextBtn {
   background: url(Arrow_Right.png) top left no-repeat;
 }

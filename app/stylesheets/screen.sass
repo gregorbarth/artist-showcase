@@ -31,7 +31,15 @@ form.bp
 body.three-col
   #container
     +container
-    +column(12)
+    header
+      .logo
+        +column(2)
+      .wrapper
+        nav
+          +column(6)
+          +append(1)
+        .follow
+          +column(3, true)
     section
       .left-col
         +column(2)

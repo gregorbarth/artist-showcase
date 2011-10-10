@@ -49,7 +49,7 @@ describe "pages/dynamic.html.haml" do
   #
   #  it "renders with a landing section" do
   #    render
-  #
+  #    # puts here!! to see what happens.
   #    #rendered.should have_selector("div.exhibitions", :count => 2)
   #    #
   #    rendered.should =~ /<h2>/

@@ -513,16 +513,42 @@ body.three-col #container {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+}
+/* line 35, ../../stylesheets/screen.sass */
+body.three-col #container header .logo {
   display: inline;
   float: left;
   margin-right: 20px;
-  width: 940px;
+  width: 140px;
 }
 /* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.three-col #container {
+* html body.three-col #container header .logo {
   overflow-x: hidden;
 }
-/* line 36, ../../stylesheets/screen.sass */
+/* line 38, ../../stylesheets/screen.sass */
+body.three-col #container header .wrapper nav {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 460px;
+  padding-right: 80px;
+}
+/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.three-col #container header .wrapper nav {
+  overflow-x: hidden;
+}
+/* line 41, ../../stylesheets/screen.sass */
+body.three-col #container header .wrapper .follow {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 220px;
+}
+/* line 147, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p290@cenatus-cms/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.three-col #container header .wrapper .follow {
+  overflow-x: hidden;
+}
+/* line 44, ../../stylesheets/screen.sass */
 body.three-col #container section .left-col {
   display: inline;
   float: left;
@@ -533,7 +559,7 @@ body.three-col #container section .left-col {
 * html body.three-col #container section .left-col {
   overflow-x: hidden;
 }
-/* line 39, ../../stylesheets/screen.sass */
+/* line 47, ../../stylesheets/screen.sass */
 body.three-col #container section .wrapper article {
   display: inline;
   float: left;
@@ -545,7 +571,7 @@ body.three-col #container section .wrapper article {
 * html body.three-col #container section .wrapper article {
   overflow-x: hidden;
 }
-/* line 42, ../../stylesheets/screen.sass */
+/* line 50, ../../stylesheets/screen.sass */
 body.three-col #container section .wrapper aside {
   display: inline;
   float: left;
@@ -556,7 +582,7 @@ body.three-col #container section .wrapper aside {
 * html body.three-col #container section .wrapper aside {
   overflow-x: hidden;
 }
-/* line 45, ../../stylesheets/screen.sass */
+/* line 53, ../../stylesheets/screen.sass */
 body.three-col #container footer .wrapper {
   display: inline;
   float: left;
