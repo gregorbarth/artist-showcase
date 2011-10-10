@@ -316,66 +316,72 @@ body.three-col.bp #container section#listen article li {
 }
 /* line 151, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#listen aside li {
-  padding: 3px 0 12px 0;
+  padding: 2px 0 10px 0;
+  border-top: 1px dotted #585858;
 }
-/* line 153, ../../stylesheets/application_internal.sass */
+/* line 154, ../../stylesheets/application_internal.sass */
+body.three-col.bp #container section#listen aside li:first-of-type {
+  padding: 0px 0 6px 0;
+  border-top: 0px dotted #585858;
+}
+/* line 157, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography {
   margin-top: -30px;
 }
-/* line 155, ../../stylesheets/application_internal.sass */
+/* line 159, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography #biog_image {
   margin-bottom: 25px;
   width: 460px;
 }
-/* line 160, ../../stylesheets/application_internal.sass */
+/* line 164, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li {
   padding: 2px 0 10px 0;
   border-top: 1px dotted #585858;
 }
-/* line 163, ../../stylesheets/application_internal.sass */
+/* line 167, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#biography aside ul li:first-of-type {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
   margin-top: 10px;
 }
-/* line 167, ../../stylesheets/application_internal.sass */
+/* line 171, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs {
   margin-top: -30px;
 }
-/* line 169, ../../stylesheets/application_internal.sass */
+/* line 173, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table {
   margin-bottom: 0;
 }
-/* line 171, ../../stylesheets/application_internal.sass */
+/* line 175, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig {
   border-top: 1px dotted #585858;
   padding: 2px 0 10px 0;
 }
-/* line 174, ../../stylesheets/application_internal.sass */
+/* line 178, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td {
   padding: 2px 0 8px 0;
 }
-/* line 176, ../../stylesheets/application_internal.sass */
+/* line 180, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.location {
   width: 220px;
 }
-/* line 178, ../../stylesheets/application_internal.sass */
+/* line 182, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.date {
   width: 60px;
 }
-/* line 180, ../../stylesheets/application_internal.sass */
+/* line 184, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs table tr.gig td.city {
   width: 140px;
 }
-/* line 182, ../../stylesheets/application_internal.sass */
+/* line 186, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#gigs h2 {
   margin: 0;
 }
-/* line 184, ../../stylesheets/application_internal.sass */
+/* line 188, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact {
   margin-top: -30px;
 }
-/* line 186, ../../stylesheets/application_internal.sass */
+/* line 190, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul {
   margin: 0;
   padding: 0;
@@ -406,7 +412,7 @@ body.three-col.bp #container section#contact ul li:last-child {
 body.three-col.bp #container section#contact ul li.last {
   padding-right: 0;
 }
-/* line 188, ../../stylesheets/application_internal.sass */
+/* line 192, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li {
   list-style-image: none;
   list-style-type: none;
@@ -438,19 +444,19 @@ body.three-col.bp #container section#contact ul li.last {
 * html body.three-col.bp #container section#contact ul li {
   overflow-x: hidden;
 }
-/* line 192, ../../stylesheets/application_internal.sass */
+/* line 196, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li h2 {
   margin-bottom: 0.4em;
 }
-/* line 194, ../../stylesheets/application_internal.sass */
+/* line 198, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li p {
   margin: 0 0 0.4em;
 }
-/* line 196, ../../stylesheets/application_internal.sass */
+/* line 200, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container section#contact ul li:last-of-type {
   margin-right: 0;
 }
-/* line 198, ../../stylesheets/application_internal.sass */
+/* line 202, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer {
   clear: both;
   overflow: hidden;
@@ -458,32 +464,32 @@ body.three-col.bp #container footer {
   padding-top: 90px;
   margin-bottom: 800px;
 }
-/* line 204, ../../stylesheets/application_internal.sass */
+/* line 208, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper {
   border-top: 1px solid #878787;
   padding: 0;
   font-size: 0.75em;
 }
-/* line 208, ../../stylesheets/application_internal.sass */
+/* line 212, ../../stylesheets/application_internal.sass */
 body.three-col.bp #container footer .wrapper #about_asc {
   width: 460px;
   display: none;
 }
 
-/* line 214, ../../stylesheets/application_internal.sass */
+/* line 218, ../../stylesheets/application_internal.sass */
 article #slider {
   width: 460px;
   height: 320px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 215, ../../stylesheets/application_internal.sass */
+/* line 219, ../../stylesheets/application_internal.sass */
 article #slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 219, ../../stylesheets/application_internal.sass */
+/* line 223, ../../stylesheets/application_internal.sass */
 article #slider li {
   margin: 0;
   padding: 0;
@@ -492,7 +498,7 @@ article #slider li {
   height: 320px;
   overflow: hidden;
 }
-/* line 230, ../../stylesheets/application_internal.sass */
+/* line 234, ../../stylesheets/application_internal.sass */
 article #prevBtn, article #nextBtn {
   width: 6px;
   height: 11px;
@@ -500,15 +506,15 @@ article #prevBtn, article #nextBtn {
   left: 438px;
   top: -5px;
 }
-/* line 236, ../../stylesheets/application_internal.sass */
+/* line 240, ../../stylesheets/application_internal.sass */
 article #prevBtn a:link, article #prevBtn a:visited, article #prevBtn a:active, article #prevBtn a:hover, article #nextBtn a:link, article #nextBtn a:visited, article #nextBtn a:active, article #nextBtn a:hover {
   text-decoration: none;
 }
-/* line 238, ../../stylesheets/application_internal.sass */
+/* line 242, ../../stylesheets/application_internal.sass */
 article #prevBtn {
   background: url(Arrow_Left.png) top left no-repeat;
 }
-/* line 240, ../../stylesheets/application_internal.sass */
+/* line 244, ../../stylesheets/application_internal.sass */
 article #nextBtn {
   background: url(Arrow_Right.png) top left no-repeat;
 }

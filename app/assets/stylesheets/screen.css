@@ -122,7 +122,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 21, ../../stylesheets/screen.sass */
+/* line 17, ../../stylesheets/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -507,18 +507,18 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 36, ../../stylesheets/screen.sass */
+/* line 32, ../../stylesheets/screen.sass */
 body.three-col #container {
   width: 940px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 38, ../../stylesheets/screen.sass */
+/* line 34, ../../stylesheets/screen.sass */
 body.three-col #container header {
   width: 940px;
 }
-/* line 40, ../../stylesheets/screen.sass */
+/* line 36, ../../stylesheets/screen.sass */
 body.three-col #container header .logo {
   display: inline;
   float: left;
@@ -529,7 +529,7 @@ body.three-col #container header .logo {
 * html body.three-col #container header .logo {
   overflow-x: hidden;
 }
-/* line 43, ../../stylesheets/screen.sass */
+/* line 39, ../../stylesheets/screen.sass */
 body.three-col #container header .wrapper nav {
   display: inline;
   float: left;
@@ -541,7 +541,7 @@ body.three-col #container header .wrapper nav {
 * html body.three-col #container header .wrapper nav {
   overflow-x: hidden;
 }
-/* line 46, ../../stylesheets/screen.sass */
+/* line 42, ../../stylesheets/screen.sass */
 body.three-col #container header .wrapper .follow {
   display: inline;
   float: left;
@@ -552,7 +552,7 @@ body.three-col #container header .wrapper .follow {
 * html body.three-col #container header .wrapper .follow {
   overflow-x: hidden;
 }
-/* line 49, ../../stylesheets/screen.sass */
+/* line 45, ../../stylesheets/screen.sass */
 body.three-col #container section .left-col {
   display: inline;
   float: left;
@@ -563,7 +563,7 @@ body.three-col #container section .left-col {
 * html body.three-col #container section .left-col {
   overflow-x: hidden;
 }
-/* line 52, ../../stylesheets/screen.sass */
+/* line 48, ../../stylesheets/screen.sass */
 body.three-col #container section .wrapper article {
   display: inline;
   float: left;
@@ -575,7 +575,7 @@ body.three-col #container section .wrapper article {
 * html body.three-col #container section .wrapper article {
   overflow-x: hidden;
 }
-/* line 55, ../../stylesheets/screen.sass */
+/* line 51, ../../stylesheets/screen.sass */
 body.three-col #container section .wrapper aside {
   display: inline;
   float: left;
@@ -586,7 +586,7 @@ body.three-col #container section .wrapper aside {
 * html body.three-col #container section .wrapper aside {
   overflow-x: hidden;
 }
-/* line 57, ../../stylesheets/screen.sass */
+/* line 53, ../../stylesheets/screen.sass */
 body.three-col #container footer {
   width: 940px;
 }
