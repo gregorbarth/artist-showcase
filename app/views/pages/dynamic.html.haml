@@ -105,9 +105,7 @@
           - for gig in @gigs.results do
             %tr
               %td= gig.start.strftime('%d/%m/%y')
-              %td
-                = gig.venue.display_name
-                = link_to "+++", gig.uri
+              %td= link_to gig.venue.display_name, gig.uri
               %td= gig.location.city
       %aside
 %section#contact
